@@ -28,8 +28,8 @@ of any useful information or subtle transition.  Parents especially will appreci
 Bill Watterson really nailed this concept in so many of his strips.  Unfortunately, there is no legitimate Calvin and Hobbes
 archive for me to link to.  Roger Ebert also expressed it with great clarity in his original review of
 [Willie Wonka and the Chocolate Factory][wonka]:
-> “Kids are not stupid. They are among the sharpest, cleverest, most eagle-eyed creatures on God’s Earth, and very little escapes
-> their notice.”[^3]
+
+> “Kids are not stupid. They are among the sharpest, cleverest, most eagle-eyed creatures on God’s Earth, and very little escapes their notice.”[^3]
 
 I recently had an experience with my children that illustrates the point perfectly.  We were  playing [Plants vs. Zombies][pvz-amazon]
 together[^4].  They need a little help planting enough sunflowers and defending in the early part of each mission, so I get them
