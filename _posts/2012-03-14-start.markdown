@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "You have to start somewhere"
+date:   2012-03-14 16:00:00 -0400
+permalink: /blog/2012/03/14/you-have-to-start-somewhere/
+---
+I’ll tell you three things about me to get us started.  I follow sports, I watch movies, and I work in software development.
+I can’t lie to you.  This is not an exceptional combination, and I do not feel as though a great weight has been lifted
+from me by this public disclosure.
+
+Of the many high-quality lessons I have learned from the world of sports.  It is more valuable to relate one thing
+to another than to simply explain it directly.  We know this, and we know it for certain, because in sports,
+when something happens, they can’t just tell you what it is.  They have to tell you in terms of something else.
+
+* "This quarterback is like a point guard, keeping everyone involved in the offense."
+* "This game is a chess match between two tacticians."
+* "Curling is like shuffleboard for the able bodied"
+* "That pitcher is throwing darts"
+
+It turns out there is no reason why this can’t work for software and business as well.   (A citation for this will
+be provided as soon as I update Wikipedia to point back to this blog post).  I can’t wait to tell you about the
+important lessons you can learn from [Robocop 2][robocop2].  You might want to go watch it now so you are prepared
+later when I post about it.
+
+[robocop2]: http://www.imdb.com/title/tt0100502/
