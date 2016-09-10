@@ -6,11 +6,13 @@ permalink: /blog/2012/03/27/attention-to-detail/
 ---
 
 Perhaps you have been a party to the following conversation:
+
 > Person A: Remember in <substitute movie> when <subtle event happened>?
 
 > Person B: I watched that movie just last night and I didn’t notice.
 
 If you are not the creative type, then allow me to substitute a fun example for you:
+
 > Person A: Remember in Toy Story when Mr. Potato head kisses his butt with his own lips, to mock the slinky dog?[^1]
 
 ![Mr. Potato Head kissing his own butt][potato-butt-kiss]
