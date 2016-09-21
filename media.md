@@ -18,6 +18,19 @@ When I was speaking at [Philly ETE][philly-ete-2016] in April 2016, I was interv
 
 <iframe width="320" height="30" src="http://chariotsolutions.com/?powerpress_embed=14530-podcast&amp;powerpress_player=mediaelement-audio" frameborder="0" scrolling="no"></iframe>
 
+Ethermoon Articles
+==================
+Here are three articles from the Ethermoon time machine:
+
+Nov-2000: [A Web firm where the CEO is still having fun][ethermoon-pbj]
+
+Dec-2000: [Ahead Of The Game][ethermoon-philly.com]
+
+Jan-2001: [Gamespot Inteview][ethermoon-gamespot]
+
 [techpeople]: http://www.gistia.com/techpeople/
 [philly-ete-2016]: http://2016.phillyemergingtech.com/session/delivering-agile-methodologies-and-emerging-technologies-in-hostile-environments/
 [techcast]: http://chariotsolutions.com/podcasts/show/techcast/
+[ethermoon-pbj]: http://www.bizjournals.com/philadelphia/stories/2000/11/06/focus6.html
+[ethermoon-philly.com]: http://articles.philly.com/2000-12-07/business/25579762_1_real-time-strategy-genre-martin-snyder-web-sites
+[ethermoon-gamespot]: http://www.gamespot.com/articles/strifeshadow/1100-2696598/
