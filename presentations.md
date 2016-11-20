@@ -6,7 +6,7 @@ permalink: /presentations/
 
 October 2016 - Immutability in JavaScript and seamless-immutable-cursor ([React Philly][react-philly])
 ======================================================================================================
-Video coming soon
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wQy5vxzNdV0" frameborder="0" allowfullscreen></iframe>
 
 September 2016 - Stop goofing around during build cycles with webpack HMR ([LibertyJS][libertyjs])
 ==================================================================================================
