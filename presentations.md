@@ -4,6 +4,14 @@ title: Presentations
 permalink: /presentations/
 ---
 
+April 2017 - Building data breach and subpoena resistant applications ([Philly ETE][phillyete2017])
+======================================================================================================
+Video not yet available
+
+January 2017 - Building a Custom Query Engine with Quill ([Scala by the Schuylkill][schuylkill])
+======================================================================================================
+Video not yet available
+
 October 2016 - Immutability in JavaScript and seamless-immutable-cursor ([React Philly][react-philly])
 ======================================================================================================
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQy5vxzNdV0" frameborder="0" allowfullscreen></iframe>
@@ -12,11 +20,11 @@ September 2016 - Stop goofing around during build cycles with webpack HMR ([Libe
 ==================================================================================================
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JVuzVjClP5g" frameborder="0" allowfullscreen></iframe>
 
-April 2016 - Delivering Agile Methodologies and Emerging Technologies in Hostile Environments ([Philly ETE][phillyete])
+April 2016 - Delivering Agile Methodologies and Emerging Technologies in Hostile Environments ([Philly ETE][phillyete2016])
 =======================================================================================================================
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T0KJ9vlD5SA" frameborder="0" allowfullscreen></iframe>
 
-March 2016 - Monadic Logging and You! ([NEScala][nescala])
+March 2016 - Monadic Logging and You! ([NEScala][nescala]) (Also December 2016 - [PHASE][phase])
 ==========================================================
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t-YX55ZF4g0" frameborder="0" allowfullscreen></iframe>
 
@@ -40,10 +48,12 @@ May 2005 - Developing Web Services for Documentum (Southeast Documentum User's G
 =====================================================================================
 No video available
 
+[schuylkill]: http://scala.comcast.com/
 [react-philly]: https://www.meetup.com/React-Philly/
 [libertyjs]: http://www.libertyjs.com/
 [nescala]: http://www.nescala.org/
-[phillyete]: http://2016.phillyemergingtech.com/
+[phillyete2016]: http://2016.phillyemergingtech.com/
+[phillyete2017]: http://2017.phillyemergingtech.com/
 [phase]: https://www.meetup.com/scala-phase/
 [phillyjug]: https://www.meetup.com/PhillyJUG/
 [scala-transactional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
