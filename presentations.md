@@ -8,6 +8,12 @@ April 2017 - Building data breach and subpoena resistant applications ([Philly E
 ======================================================================================================
 Video not yet available
 
+February 2017 - JWTs and Their Application ([Philly JUG][phillyjug])
+======================================================================================================
+[Slides][jwt-slides]
+
+No video available
+
 January 2017 - Building a Custom Query Engine with Quill ([Scala by the Schuylkill][schuylkill])
 ======================================================================================================
 Video not yet available
@@ -48,6 +54,7 @@ May 2005 - Developing Web Services for Documentum (Southeast Documentum User's G
 =====================================================================================
 No video available
 
+[jwt-slides]: /asset/jwts_and_their_application.pdf
 [schuylkill]: http://scala.comcast.com/
 [react-philly]: https://www.meetup.com/React-Philly/
 [libertyjs]: http://www.libertyjs.com/
