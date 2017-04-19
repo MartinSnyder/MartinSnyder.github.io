@@ -6,17 +6,19 @@ permalink: /presentations/
 
 April 2017 - Building data breach and subpoena resistant applications ([Philly ETE][phillyete2017])
 ======================================================================================================
-Video not yet available
+[Slides][data-breach-slides]
+
+Recording not yet available
 
 February 2017 - JWTs and Their Application ([Philly JUG][phillyjug])
 ======================================================================================================
 [Slides][jwt-slides]
 
-No video available
+Recording not yet available
 
 January 2017 - Building a Custom Query Engine with Quill ([Scala by the Schuylkill][schuylkill])
 ======================================================================================================
-Video not yet available
+Recording not yet available
 
 October 2016 - Immutability in JavaScript and seamless-immutable-cursor ([React Philly][react-philly])
 ======================================================================================================
@@ -54,6 +56,7 @@ May 2005 - Developing Web Services for Documentum (Southeast Documentum User's G
 =====================================================================================
 No video available
 
+[data-breach-slides]: /asset/snyder_data_breach_resistant_systems.pdf
 [jwt-slides]: /asset/jwts_and_their_application.pdf
 [schuylkill]: http://scala.comcast.com/
 [react-philly]: https://www.meetup.com/React-Philly/
