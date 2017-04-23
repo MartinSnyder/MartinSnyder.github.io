@@ -20,7 +20,7 @@ January 2017 - Building a Custom Query Engine with Quill
 ======================================================================================================
 [Slides][quill-slides] ([Scala by the Schuylkill][schuylkill])
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MYu_PShMocQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E5mtBTEgmLE" frameborder="0" allowfullscreen></iframe>
 
 October 2016 - Immutability in JavaScript and seamless-immutable-cursor
 ======================================================================================================
