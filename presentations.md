@@ -4,32 +4,40 @@ title: Presentations
 permalink: /presentations/
 ---
 
-April 2017 - Building data breach and subpoena resistant applications ([Philly ETE][phillyete2017])
+April 2017 - Building data breach and subpoena resistant applications
 ======================================================================================================
-[Slides][data-breach-slides]
+[Philly ETE][phillyete2017] [Slides][data-breach-slides]
 
 Recording not yet available
 
-February 2017 - JWTs and Their Application ([Philly JUG][phillyjug])
+February 2017 - JWTs and Their Application
 ======================================================================================================
-[Slides][jwt-slides]
+[Philly JUG][phillyjug] [Slides][jwt-slides]
 
 Recording not yet available
 
-January 2017 - Building a Custom Query Engine with Quill ([Scala by the Schuylkill][schuylkill])
+January 2017 - Building a Custom Query Engine with Quill
 ======================================================================================================
-Recording not yet available
+[Scala by the Schuylkill][schuylkill] [Slides][quill-slides]
 
-October 2016 - Immutability in JavaScript and seamless-immutable-cursor ([React Philly][react-philly])
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MYu_PShMocQ" frameborder="0" allowfullscreen></iframe>
+
+October 2016 - Immutability in JavaScript and seamless-immutable-cursor
 ======================================================================================================
+[React Philly][react-philly] [Slides][cursor-slides]
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wQy5vxzNdV0" frameborder="0" allowfullscreen></iframe>
 
-September 2016 - Stop goofing around during build cycles with webpack HMR ([LibertyJS][libertyjs])
+September 2016 - Stop goofing around during build cycles with webpack HMR
 ==================================================================================================
+[LibertyJS][libertyjs] [Slides][webpack-slides]
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JVuzVjClP5g" frameborder="0" allowfullscreen></iframe>
 
-April 2016 - Delivering Agile Methodologies and Emerging Technologies in Hostile Environments ([Philly ETE][phillyete2016])
+April 2016 - Delivering Agile Methodologies and Emerging Technologies in Hostile Environments
 =======================================================================================================================
+[Philly ETE][phillyete2016]
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T0KJ9vlD5SA" frameborder="0" allowfullscreen></iframe>
 
 March 2016 - Monadic Logging and You! ([NEScala][nescala]) (Also December 2016 - [PHASE][phase])
@@ -58,9 +66,12 @@ No video available
 
 [data-breach-slides]: /asset/snyder_data_breach_resistant_systems.pdf
 [jwt-slides]: /asset/jwts_and_their_application.pdf
+[quill-slides]: https://rawgit.com/MartinSnyder/scala-transactional-datastore/master/presentation/index.html
 [schuylkill]: http://scala.comcast.com/
 [react-philly]: https://www.meetup.com/React-Philly/
+[cursor-slides]: https://rawgit.com/MartinSnyder/seamless-immutable-cursor/master/presentation/index.html#/
 [libertyjs]: http://www.libertyjs.com/
+[webpack-slides]: https://rawgit.com/MartinSnyder/webpack-hmr-demo/master/presentation/index.html
 [nescala]: http://www.nescala.org/
 [phillyete2016]: http://2016.phillyemergingtech.com/
 [phillyete2017]: http://2017.phillyemergingtech.com/
