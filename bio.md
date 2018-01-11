@@ -12,7 +12,7 @@ and presented on a variety of topics over the years, most recently on the Scala 
 
 Martin is a frequent presenter and organizer ([Philly JUG][phillyjug], [PHASE][phase], [Philly ETE][ete] and the [Northeast Scala Symposium][nescala]) in the Philadelphia software development community. He graduated from Cornell University and holds a BS in Computer Science.
 
-[wingspan]: http:www.wingspan.com
+[wingspan]: http://www.wingspan.com
 [ethermoon]: http://www.ethermoon.com
 [phillyjug]: https://www.meetup.com/PhillyJUG/
 [phase]: https://www.meetup.com/scala-phase/
