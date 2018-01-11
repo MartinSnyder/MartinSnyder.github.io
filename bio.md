@@ -4,7 +4,7 @@ title: Bio
 permalink: /bio/
 ---
 
-Martin is the Director of Software Engineering for Content Management at [Wingspan Technology, a QuintilesIMS Company][wingspan]. Prior to Wingspan's acquisition, he served as Chief Technology Officer for approximately 15 years. Martin is responsible for technology and software engineering leadership in the organization and brings over 20 years of experience as an software architect and executive for enterprise applications, integrations, and document management infrastructures for global enterprise applications.
+Martin is the Director of Software Engineering for Content Management at [Wingspan Technology, an IQVIA Company][wingspan]. Prior to Wingspan's acquisition, he served as Chief Technology Officer for approximately 15 years. Martin is responsible for technology and software engineering leadership in the organization and brings over 20 years of experience as an software architect and executive for enterprise applications, integrations, and document management infrastructures for global enterprise applications.
  
 Prior to joining Wingspan, Martin founded and operated [Ethermoon Entertainment][ethermoon], a video game development company and was the CTO
 of Apricus, a clinical data company. He has held leadership positions in Philadelphia, Boston, and Silicon Valley. Martin has also published
