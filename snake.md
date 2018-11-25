@@ -10,6 +10,7 @@ Use your mouse or finger to point the snake to point the snake in the direction 
 
 <pre>
     <div id="elm"></div>
+    <script type="text/javascript" src="pep.js"></script>
     <script type="text/javascript" src="snake.js"></script>
     <script>
         var app = Elm.Main.init({
