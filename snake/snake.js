@@ -4488,7 +4488,7 @@ var author$project$Grid$Size = F2(
 	function (width, height) {
 		return {I: height, O: width};
 	});
-var author$project$Main$gridSize = A2(author$project$Grid$Size, 30, 20);
+var author$project$Main$gridSize = A2(author$project$Grid$Size, 40, 20);
 var author$project$Main$initialSnakeLength = 20;
 var elm$core$Basics$sub = _Basics_sub;
 var elm$core$Basics$add = _Basics_add;
@@ -6420,6 +6420,7 @@ var elm$svg$Svg$text = elm$virtual_dom$VirtualDom$text;
 var elm$svg$Svg$text_ = elm$svg$Svg$trustedNode('text');
 var elm$svg$Svg$Attributes$height = _VirtualDom_attribute('height');
 var elm$svg$Svg$Attributes$style = _VirtualDom_attribute('style');
+var elm$svg$Svg$Attributes$viewBox = _VirtualDom_attribute('viewBox');
 var elm$svg$Svg$Attributes$width = _VirtualDom_attribute('width');
 var elm$svg$Svg$Attributes$x = _VirtualDom_attribute('x');
 var elm$svg$Svg$Attributes$y = _VirtualDom_attribute('y');
@@ -6574,10 +6575,10 @@ var author$project$Main$view = function (model) {
 		elm$svg$Svg$svg,
 		_List_fromArray(
 			[
-				elm$svg$Svg$Attributes$width(
-				elm$core$String$fromInt(author$project$Main$gridSize.O * author$project$Main$cellSize.O)),
-				elm$svg$Svg$Attributes$height(
-				elm$core$String$fromInt(author$project$Main$gridSize.I * author$project$Main$cellSize.I)),
+				elm$svg$Svg$Attributes$width('100%'),
+				elm$svg$Svg$Attributes$height('auto'),
+				elm$svg$Svg$Attributes$viewBox(
+				'0 0 ' + (elm$core$String$fromInt(author$project$Main$gridSize.O * author$project$Main$cellSize.O) + (' ' + elm$core$String$fromInt(author$project$Main$gridSize.I * author$project$Main$cellSize.I)))),
 				mpizenberg$elm_pointer_events$Html$Events$Extra$Pointer$onDown(
 				function (event) {
 					return author$project$Main$PointerDownAt(event.a5.a0);
