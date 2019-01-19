@@ -24,7 +24,7 @@ github_username:  MartinSnyder
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: minima
 
 # Google services
 google_analytics: UA-30648559-1
