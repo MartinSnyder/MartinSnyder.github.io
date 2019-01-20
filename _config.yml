@@ -22,6 +22,15 @@ url: "http://www.martinsnyder.net" # the base hostname & protocol for your site
 twitter_username: MartinSnyder
 github_username:  MartinSnyder
 
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+- bio.md
+- media.md
+- presentations.md
+- publications.md
+- games.md
+
 # Build settings
 markdown: kramdown
 theme: minima
