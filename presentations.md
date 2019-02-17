@@ -50,8 +50,9 @@ September 2014 - Live coding a CRUD database in Scala ([PHASE][phase])
 ======================================================================
 No video available for this presentation. It's too bad because it was really cool. The [project repository][scala-transactional-datastore] has the source code.
 
-August 2013 - Functional Wrappers for legacy APIs ([Philly JUG][phillyjug])
+August 2013 - Functional Wrappers for legacy APIs
 ===========================================================================
+[Slides][functional-wrapper-slides] ([Philly JUG][phillyjug])
 <iframe src="https://player.vimeo.com/video/75591447" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 May 2006 - AJAX: What it is and What it Can Do for Your iViews ([Americas' SAP User's Group][asug])
@@ -68,14 +69,15 @@ No video available
 
 [data-breach-slides]: /asset/snyder_data_breach_resistant_systems.pdf
 [jwt-slides]: /asset/jwts_and_their_application.pdf
-[quill-slides]: https://rawgit.com/MartinSnyder/scala-transactional-datastore/master/presentation/index.html
+[quill-slides]: /asset/revealjs/quill.html
 [schuylkill]: http://scala.comcast.com/
 [react-philly]: https://www.meetup.com/React-Philly/
-[cursor-slides]: https://rawgit.com/MartinSnyder/seamless-immutable-cursor/master/presentation/index.html#/
+[cursor-slides]: /asset/revealjs/seamless-immutable-cursor.html
 [libertyjs]: http://www.libertyjs.com/
-[webpack-slides]: https://rawgit.com/MartinSnyder/webpack-hmr-demo/master/presentation/index.html
+[webpack-slides]: /asset/revealjs/webpack-hmr.html
 [nescala]: http://www.nescala.org/
-[monadic-logging-slides]: https://rawgit.com/MartinSnyder/monadic-logging/master/presentation/index.html
+[monadic-logging-slides]: /asset/revealjs/monadic-logging.html
+[functional-wrapper-slides]: /asset/revealjs/scala-jdbc.html
 [phillyete2016]: http://2016.phillyemergingtech.com/
 [hostile-slides]: /asset/snyder_agile_in_hostile_environments.pdf
 [phillyete2017]: http://2017.phillyemergingtech.com/
