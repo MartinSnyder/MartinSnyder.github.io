@@ -18,7 +18,7 @@ email: blog@martinsnyder.net
 description: > # this means to ignore newlines until "baseurl:"
   Please wait 4-6 weeks for your changes to take effect
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.martinsnyder.net" # the base hostname & protocol for your site
+url: "https://www.martinsnyder.net" # the base hostname & protocol for your site
 twitter_username: MartinSnyder
 github_username:  MartinSnyder
 
