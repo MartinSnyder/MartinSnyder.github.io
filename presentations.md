@@ -5,7 +5,7 @@ permalink: /presentations/
 ---
 
 | Date    | Title                                                           | Organization                              |  Slides                                                | Code                                            | Media                                               |
-| --------|-----------------------------------------------------------------| ------------------------------------------|--------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
+|---------|-----------------------------------------------------------------| ------------------------------------------|--------------------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
 | 08-2018 | Transforming Clinical Processes Using Box                       | [BoxWorks][org-boxworks]                  | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
 | 09-2017 | Functional Programming in JavaScript Workshop                   | [LibertyJS][org-libertyjs]                |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
 | 04-2017 | [Building Data Breach Resistant Systems][abstract-data-breach]  | [Philly ETE][org-phillyete]               | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
