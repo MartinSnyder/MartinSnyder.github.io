@@ -13,7 +13,7 @@ permalink: /publications/
 | 12-2005 | [Object-Relational Mapping in Java with SimpleORM][simpleorm]         | [Dr. Dobb's][pub-drdobbs] |
 | 10-2005 | [Developing JSR-168 Portlets][jsr168]                                 | [Dr. Dobb's][pub-drdobbs] |
 | 01-2003 | [Robotic Control & 3D GUIs][robotic-control]                          | [Dr. Dobb's][pub-drdobbs] |
-| 10-2001 | [Supervisory control of multiple robots based on...][robotic-control] | [IEEE][pub-ieeesmc]       |
+| 10-2001 | [Supervisory control of multiple robots based on...][robots-rts]      | [IEEE][pub-ieeesmc]       |
 | 12-1998 | [Java 1.2 and JavaScript for C and C++ Programmers][javabook]         | [Wiley][pub-wiley]        |
 
 [why-open-source]: https://www.wingspan.com/why-wingspan-etmf-is-built-on-open-source-software-not-documentum-or-sharepoint/
