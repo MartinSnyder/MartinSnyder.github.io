@@ -27,7 +27,6 @@ linkedin_username: martinsnyder
 # this and add the path to the pages in order as they should show up
 header_pages:
 - bio.md
-- media.md
 - presentations.md
 - writings.md
 - games.md
