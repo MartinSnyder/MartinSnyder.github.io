@@ -8,7 +8,7 @@ permalink: /blog/2019/02/08/passing-the-torch/
 When I first considered leading the [Philly JUG][philly-jug], I strongly suspected that whether I took the job or not, I would come to regret it. It was a daunting responsibility to take on, but the JUG community was something that I had valued for quite some time and I didn’t want to risk losing it entirely.
 
 I’m happy to report that after 3 years of service, I regret nothing.
-
+<!--break-->
 The JUG has expanded to include a healthy roster of presenters, venues, sponsors, organizers and members. My focus over this time was to objectively make this job easier for myself, my co-organizers, and our successors. We achieved this by simplifying the responsibilities, expanding the leadership, and reducing the personal obligations of everyone involved. We have worked hard to ask as little as possible of all of those who contribute to the JUG.
 
 In that spirit, my penultimate act as JUGmaster is to establish a term of service for this position of 2 years, in order to limit the commitment and make the position more attractive in the future. JUGmasters may serve multiple terms if they so choose.

@@ -33,6 +33,7 @@ header_pages:
 
 # Show excerpts for blog posts
 show_excerpts: true
+excerpt_separator: "<!--break-->"
 
 # Build settings
 markdown: kramdown

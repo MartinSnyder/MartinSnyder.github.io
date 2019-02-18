@@ -5,9 +5,8 @@ date:   2012-05-17 16:00:00 -0400
 permalink: /blog/2012/05/17/volvo-s80-car-fire/
 ---
 
-A couple of weeks ago, just after I arrived at work, people were drawn outside by a car fire in the parking lot.  I followed the crowd, and
-stood amongst all the people who were wondering who’s car it was.
-
+A couple of weeks ago, just after I arrived at work, people were drawn outside by a car fire in the parking lot.  I followed the crowd, and stood amongst all the people who were wondering who’s car it was.
+<!--break-->
 If you watched the video, you’ll already have solved the mystery.  It was mine.  As I was standing there, a couple of thoughts popped into my
 head:
 

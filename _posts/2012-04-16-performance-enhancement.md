@@ -5,10 +5,8 @@ date:   2012-04-16 16:00:00 -0400
 permalink: /blog/2012/04/16/performance-enhancement/
 ---
 
-A friend of mine recently brought to my attention the use of performance enhancing drugs (PEDs) in the workplace, especially in
-[Silicon Valley][provigil-news].  I suspect this is not limited to the software field and probably either has or soon will bleed over into other
-“knowledge worker” fields.  Caffeine is now a gateway drug.
-
+A friend of mine recently brought to my attention the use of performance enhancing drugs (PEDs) in the workplace, especially in [Silicon Valley][provigil-news]. I suspect this is not limited to the software field and probably either has or soon will bleed over into other “knowledge worker” fields. Caffeine is now a gateway drug.
+<!--break-->
 The sports world has something to teach us here.  Back in the 70’s, bodybuilders and power lifters started experimenting with steroids and
 40 years later it’s hard to imagine a sport that hasn’t had a PED scandal.  It’s not hard to see why athletes were (and continue to be) so
 easily tempted:

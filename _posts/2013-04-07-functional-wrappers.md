@@ -5,14 +5,12 @@ date:   2013-04-07 16:00:00 -0400
 permalink: /blog/2013/08/07/functional-wrappers-for-legacy-apis/
 ---
 
-[Download project source on GitHub][github-project]
-
 There are many challenges in introducing a new technology into an existing project or organization.  To be successful, you normally need to be
 able to achieve one or all of the following:
 * Experiment with the new technology incrementally without incurring a massive adoption cost
 * Showcase the strengths of the technology immediately
 * Give a concrete benefit to the people on the front lines of the organization
-
+<!--break-->
 This article demonstrates techniques that can be used for such an introduction by examining a contrived example of building a functional API
 for JDBC[^1] using Scala.  While the stated example is contrived, the inspiration for it is an enterprise integration API called the Documentum
 Foundation Classes, which has many similarities to JDBC.
