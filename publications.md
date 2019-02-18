@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Writings
-permalink: /writings/
+title: Publications
+permalink: /publications/
 ---
 
 | Date    | Title                                                                 | Publisher                 |
