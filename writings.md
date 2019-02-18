@@ -6,6 +6,7 @@ permalink: /writings/
 
 | Date    | Title                                                                 | Publisher                 |
 |---------|-----------------------------------------------------------------------| --------------------------|
+| 07-2016 | [Why Wingspan eTMF is built on Open Source Software][why-open-source] | [Wingspan][pub-wingspan]  |
 | 08-2013 | [Functional Wrappers for legacy APIs][functional-wrappers]            | Self                      |
 | 04-2012 | [Performance Enhancement][performance-enhancement]                    | Self                      |
 | 03-2012 | [Attention to Detail][attention-to-detail]                            | Self                      |
@@ -15,6 +16,7 @@ permalink: /writings/
 | 10-2001 | [Supervisory control of multiple robots based on...][robotic-control] | [IEEE][pub-ieeesmc]       |
 | 12-1998 | [Java 1.2 and JavaScript for C and C++ Programmers][javabook]         | [Wiley][pub-wiley]        |
 
+[why-open-source]: https://www.wingspan.com/why-wingspan-etmf-is-built-on-open-source-software-not-documentum-or-sharepoint/
 [functional-wrappers]: /blog/2013/08/07/functional-wrappers-for-legacy-apis/
 [performance-enhancement]: /blog/2012/04/16/performance-enhancement/
 [attention-to-detail]: /blog/2012/03/27/attention-to-detail/
@@ -26,3 +28,4 @@ permalink: /writings/
 [pub-drdobbs]: http://www.drdobbs.com/
 [pub-wiley]: https://www.wiley.com
 [pub-ieeesmc]: http://www.ieeesmc.org/conferences/calendar/smc-society-conferences
+[pub-wingspan]: https://www.wingspan.com
