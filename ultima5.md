@@ -12,8 +12,6 @@ Ultima 5 was written by Origin Systems, and was my favorite game in the series g
 
 For people that are interested in playing, it looks like the best way to get a copy is with this bundle on [GOG.com][gog]: [Ultima™ 4+5+6 Bundle][ultima-bundle]
 
-and is one of the favorite Ultimas in all of netland. With the drastic changes to the Ultima engine in Ultimas 7, 7.5, and 8, many people have returned to the classics. This file is intended to help all those people who no longer have their notes from the original, and for those people who are having trouble their first time through, as this is one of the more difficult Ultimas.
-
 # Companions #
 You start the game with Shamino (although he is injured) and Iolo, there is no reason to get rid of either of these two characters. The following is a table of other adventurers in the game who will join your quest, along with some useful information about them. I have assigned each character a rating which consists of the sum of the three statistics, plus the number of levels the character may still advance. This rating is useful for choosing which characters to have in your party, but don't take into account the character's spellcasting ability. Do not ask Saduj to join your party. Although he is one of the better characters, he is a member of the oppression, and will turn on you in combat.
 
