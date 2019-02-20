@@ -170,7 +170,7 @@ The Shadowlords were spawned by three pieces of Mondain's gem. You need to recov
 
 # LORD BRITISH'S ARTIFACTS #
 
-You need these three items in order to complete the game.
+You need these four items in order to complete the game.
 
 | Artifact | Notes |
 |---------------|-------|
