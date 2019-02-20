@@ -11,6 +11,7 @@ able to achieve one or all of the following:
 * Showcase the strengths of the technology immediately
 * Give a concrete benefit to the people on the front lines of the organization
 <!--break-->
+
 This article demonstrates techniques that can be used for such an introduction by examining a contrived example of building a functional API
 for JDBC[^1] using Scala.  While the stated example is contrived, the inspiration for it is an enterprise integration API called the Documentum
 Foundation Classes, which has many similarities to JDBC.

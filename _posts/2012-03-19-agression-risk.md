@@ -7,6 +7,7 @@ permalink: /blog/2012/03/19/aggression-and-risk/
 
 Younger readers may not realize this, but there used to be a golfer named Tiger Woods who dominated the sport so completely that they literally changed the layout of every professional golf course in the world to prevent him from rewriting the record book[^1]. He rewrote most of the record book anyway, and he would have rewritten all of it had it not been for his unexpected fall from grace.
 <!--break-->
+
 For those of you who don’t care for golf or can’t remember that far back, let me briefly paint a picture of the original Tiger. Tiger would step up to the tee on a long hole. He would whip out a big club. He would then proceed to smack the logo off the ball. It was almost like he didn’t care where it went. Sometimes Tiger would drill the ball and it would carry more or less as he intended and land somewhere good. Other times, he would drill the ball and it would end up off the fairway. It might end up somewhere bad: on solid dirt, in the sand, or in the root structure of a tree.
 
 Fans of the game and fans of Tiger, when this happened, would often wonder why he didn’t “take a little off” the swing. Sacrifice some of his power for a little more control. Work to keep the ball in the fairway more often. Play more conservatively. It almost offended some people that he didn’t seem to care.

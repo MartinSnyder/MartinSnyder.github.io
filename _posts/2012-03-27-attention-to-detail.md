@@ -13,6 +13,7 @@ Perhaps you have been a party to the following conversation:
 
 If you are not the creative type, then allow me to substitute a fun example for you:
 <!--break-->
+
 > Person A: Remember in Toy Story when Mr. Potato head kisses his butt with his own lips, to mock the slinky dog?[^1]
 
 ![Mr. Potato Head kissing his own butt][potato-butt-kiss]
