@@ -32,5 +32,5 @@ It’s one of those things you can’t possibly understand without experiencing 
 My lesson from the experience is this:
 > If you want anything of value to pop into your head during a moment of shock, it had better already have been there.
 
-[comedic-avalanch]: /img/volvo/ComedicAvalanch.png
-[volvo-amazon]: /img/volvo/VolvoS80Amazon1.png
+[comedic-avalanch]: /asset/volvo/ComedicAvalanch.png
+[volvo-amazon]: /asset/volvo/VolvoS80Amazon1.png
