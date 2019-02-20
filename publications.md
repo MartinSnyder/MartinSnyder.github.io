@@ -15,6 +15,7 @@ permalink: /publications/
 | 01-2003 | [Robotic Control & 3D GUIs][robotic-control]                          | [Dr. Dobb's][pub-drdobbs] |
 | 10-2001 | [Supervisory control of multiple robots based on...][robots-rts]      | [IEEE][pub-ieeesmc]       |
 | 12-1998 | [Java 1.2 and JavaScript for C and C++ Programmers][javabook]         | [Wiley][pub-wiley]        |
+| 07-1994 | [Ultima V Player's Guide][ultima5]                                    | Self                      |
 
 [why-open-source]: https://www.wingspan.com/why-wingspan-etmf-is-built-on-open-source-software-not-documentum-or-sharepoint/
 [functional-wrappers]: /blog/2013/08/07/functional-wrappers-for-legacy-apis/
@@ -25,6 +26,7 @@ permalink: /publications/
 [simpleorm]: http://www.drdobbs.com/database/object-relational-mapping-in-java-with-s/184406344
 [jsr168]: http://www.drdobbs.com/jvm/developing-jsr-168-portlets/184406282
 [javabook]: https://www.amazon.com/Java-JavaScript-Programmers-Michael-Daconta/dp/0471183598
+[ultima5]: /ultima5/
 [pub-drdobbs]: http://www.drdobbs.com/
 [pub-wiley]: https://www.wiley.com
 [pub-ieeesmc]: http://www.ieeesmc.org/conferences/calendar/smc-society-conferences
