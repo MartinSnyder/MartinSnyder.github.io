@@ -4,18 +4,18 @@ title: Publications
 permalink: /publications/
 ---
 
-| Date    | Title                                                                 | Publisher                 |
-|---------|-----------------------------------------------------------------------| --------------------------|
-| 07-2016 | [Why Wingspan eTMF is built on Open Source Software][why-open-source] | [Wingspan][pub-wingspan]  |
-| 08-2013 | [Functional Wrappers for legacy APIs][functional-wrappers]            | Self                      |
-| 04-2012 | [Performance Enhancement][performance-enhancement]                    | Self                      |
-| 03-2012 | [Attention to Detail][attention-to-detail]                            | Self                      |
-| 12-2005 | [Object-Relational Mapping in Java with SimpleORM][simpleorm]         | [Dr. Dobb's][pub-drdobbs] |
-| 10-2005 | [Developing JSR-168 Portlets][jsr168]                                 | [Dr. Dobb's][pub-drdobbs] |
-| 01-2003 | [Robotic Control & 3D GUIs][robotic-control]                          | [Dr. Dobb's][pub-drdobbs] |
-| 10-2001 | [Supervisory control of multiple robots based on...][robots-rts]      | [IEEE][pub-ieeesmc]       |
-| 12-1998 | [Java 1.2 and JavaScript for C and C++ Programmers][javabook]         | [Wiley][pub-wiley]        |
-| 07-1994 | [Ultima V Player's Guide][ultima5]                                    | Self                      |
+| Title                                                                 | Publisher                 |
+|-----------------------------------------------------------------------| --------------------------|
+| [Attention to Detail][attention-to-detail]                            | Self                      |
+| [Developing JSR-168 Portlets][jsr168]                                 | [Dr. Dobb's][pub-drdobbs] |
+| [Functional Wrappers for legacy APIs][functional-wrappers]            | Self                      |
+| [Java 1.2 and JavaScript for C and C++ Programmers][javabook]         | [Wiley][pub-wiley]        |
+| [Object-Relational Mapping in Java with SimpleORM][simpleorm]         | [Dr. Dobb's][pub-drdobbs] |
+| [Performance Enhancement][performance-enhancement]                    | Self                      |
+| [Robotic Control & 3D GUIs][robotic-control]                          | [Dr. Dobb's][pub-drdobbs] |
+| [Supervisory control of multiple robots based on...][robots-rts]      | [IEEE][pub-ieeesmc]       |
+| [Ultima V Player's Guide][ultima5]                                    | Self                      |
+| [Why Wingspan eTMF is built on Open Source Software][why-open-source] | [Wingspan][pub-wingspan]  |
 
 [why-open-source]: https://www.wingspan.com/why-wingspan-etmf-is-built-on-open-source-software-not-documentum-or-sharepoint/
 [functional-wrappers]: /blog/2013/08/07/functional-wrappers-for-legacy-apis/
