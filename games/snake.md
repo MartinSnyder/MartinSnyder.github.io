@@ -8,8 +8,8 @@ Use your mouse or finger to point the snake to point the snake in the direction 
 
 <pre>
 <div id="elm" width="100%"></div>
-<script type="text/javascript" src="/asset/snake/elm-pep.js"></script>
-<script type="text/javascript" src="/asset/snake/snake.js"></script>
+<script type="text/javascript" src="/games/snake/elm-pep.js"></script>
+<script type="text/javascript" src="/games/snake/snake.js"></script>
 <script>
     var app = Elm.Main.init({
         node: document.getElementById('elm')
