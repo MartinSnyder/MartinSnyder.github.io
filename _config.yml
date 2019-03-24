@@ -28,7 +28,7 @@ header_pages:
 - bio.md
 - presentations.md
 - publications.md
-- games.md
+- projects.md
 
 # Show excerpts for blog posts
 show_excerpts: true

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Presentations
-permalink: /presentations/
+permalink: /presentations
 ---
 
 | Title                                                               | Organization                              |  Slides                                                | Code                                            | Media                                               |
