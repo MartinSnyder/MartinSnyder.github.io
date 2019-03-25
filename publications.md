@@ -5,6 +5,7 @@ title: Publications
 
 | Title                                                                 | Publisher                 |
 |-----------------------------------------------------------------------| --------------------------|
+| [Aggression and Risk][aggression-and-risk]                            | Self                      |
 | [Attention to Detail][attention-to-detail]                            | Self                      |
 | [Developing JSR-168 Portlets][jsr168]                                 | [Dr. Dobb's][pub-drdobbs] |
 | [Functional Wrappers for legacy APIs][functional-wrappers]            | Self                      |
@@ -17,9 +18,10 @@ title: Publications
 | [Why Wingspan eTMF is built on Open Source Software][why-open-source] | [Wingspan][pub-wingspan]  |
 
 [why-open-source]: https://www.wingspan.com/why-wingspan-etmf-is-built-on-open-source-software-not-documentum-or-sharepoint/
-[functional-wrappers]: /blog/2013/08/07/functional-wrappers-for-legacy-apis/
-[performance-enhancement]: /blog/2012/04/16/performance-enhancement/
-[attention-to-detail]: /blog/2012/03/27/attention-to-detail/
+[functional-wrappers]: {% link articles/functional-wrappers.md %}
+[performance-enhancement]: {% link articles/performance-enhancement.md %}
+[attention-to-detail]: {% link articles/attention-to-detail.md %}
+[aggression-and-risk]: {% link articles/aggression-and-risk.md %}
 [robotic-control]: http://www.drdobbs.com/tools/robotic-control-3d-guis/184405243
 [robots-rts]: https://web.stanford.edu/group/arl/cgi-bin/drupal/sites/default/files/public/publications/JonesS%202001.pdf
 [simpleorm]: http://www.drdobbs.com/database/object-relational-mapping-in-java-with-s/184406344

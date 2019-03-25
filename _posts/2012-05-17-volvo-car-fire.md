@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Volvo S80 Car Fire"
-date:   2012-05-17 16:00:00 -0400
+title:  Volvo S80 Car Fire
+date:   2012-05-17
 permalink: /blog/2012/05/17/volvo-s80-car-fire/
 ---
 

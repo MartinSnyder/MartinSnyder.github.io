@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Nostalgia - Part 1"
-date:   2019-02-20 12:00:00 -0400
+title:  Nostalgia - Part 1
+date:   2019-02-20
 permalink: /blog/2019/02/20/nostalgia-part1/
 ---
 

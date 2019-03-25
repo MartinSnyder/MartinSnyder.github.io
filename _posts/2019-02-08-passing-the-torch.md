@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Passing the Torch - Philly JUG"
-date:   2019-02-08 12:00:00 -0400
+title:  Passing the Torch - Philly JUG
+date:   2019-02-08
 permalink: /blog/2019/02/08/passing-the-torch/
 ---
 
