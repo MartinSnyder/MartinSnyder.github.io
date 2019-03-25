@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Performance Enhancement
+title:  Performance Enhancement
 ---
 
 A friend of mine recently brought to my attention the use of performance enhancing drugs (PEDs) in the workplace, especially in [Silicon Valley][provigil-news]. I suspect this is not limited to the software field and probably either has or soon will bleed over into other “knowledge worker” fields. Caffeine is now a gateway drug.

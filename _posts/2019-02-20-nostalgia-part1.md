@@ -2,7 +2,6 @@
 layout: post
 title:  Nostalgia - Part 1
 date:   2019-02-20
-permalink: /blog/2019/02/20/nostalgia-part1/
 ---
 
 I was moving my documents collection to "The Cloud" and I came across a [Player's Guide for Ultima V][ultima5-guide] I had written back when I was in college. That itself was a nostalgic event, because the game was one of my favorites from growing up.

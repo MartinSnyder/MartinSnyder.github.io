@@ -2,7 +2,6 @@
 layout: post
 title:  Attention to Detail
 date:   2012-03-27
-permalink: /blog/2012/03/27/attention-to-detail/
 ---
 
 I published "[Attention to Detail][attention-to-detail]," which ended up holding the #1 spot on Hacker news for 8 hours or so.

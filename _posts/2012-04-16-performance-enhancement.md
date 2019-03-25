@@ -2,7 +2,6 @@
 layout: post
 title:  Performance Enhancement
 date:   2012-04-16
-permalink: /blog/2012/04/16/performance-enhancement/
 ---
 
 A discussion with a friend about Provigil led me to write an article I titled "[Performance Enhancement][performance-enhancement]."

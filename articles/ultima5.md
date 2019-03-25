@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ultima V Player's Guide
+title:  Ultima V Player's Guide
 ---
 
 # Credits #
