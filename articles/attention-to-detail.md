@@ -92,10 +92,10 @@ you can’t make meaningful decisions about things you’re not aware of.
 [^8]: Note the built-in excuse here for any proofreading errors.
 [^9]: I linked to their United States operation for my readers, the real deal is [Specialisterne][specialist-people-den] based in Denmark
 
-[potato-butt-kiss]: /asset/atd/potato-butt-kiss.jpg
+[potato-butt-kiss]: {% link asset/atd/potato-butt-kiss.jpg %}
 [toy-story]: http://www.imdb.com/title/tt0114709/parentalguide
 [wonka]: http://www.rogerebert.com/reviews/willy-wonka-and-the-chocolate-factory-1971
-[pvz]: /asset/atd/pvz.gif
+[pvz]: {% link asset/atd/pvz.gif %}
 [pvz-amazon]: https://www.amazon.com/Zombies-Mac-Intel-Core-Duo-1-6GHZ/dp/B002AUC5ZQ
 [specialist-people]: http://specialisternefoundation.com/
 [specialist-people-den]: http://dk.specialisterne.com/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Presentations
+title:  Presentations
 ---
 
 | Title                                                               | Organization                              |  Slides                                                | Code                                            | Media                                               |
@@ -29,17 +29,17 @@ title: Presentations
 [abstract-embracing]: https://tmfrefmodel.com/2018/12/12/free-webinar-wingspan/
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
-[slides-data-breach]: /presentations/snyder_data_breach_resistant_systems.pdf
-[slides-transforming-clinical]: /presentations/transforming_clinical_processes.pdf
-[slides-jwt]: /presentations/jwts_and_their_application.pdf
-[slides-quill]: /presentations/revealjs/quill.html
-[slides-cursor]: /presentations/revealjs/seamless-immutable-cursor.html
-[slides-webpack]: /presentations/revealjs/webpack-hmr.html
-[slides-hostile]: /presentations/snyder_agile_in_hostile_environments.pdf
-[slides-monadic-logging]: /presentations/revealjs/monadic-logging.html
-[slides-functional-wrappers]: /presentations/revealjs/scala-jdbc.html
-[slides-ajax-iviews]: /presentations/ajax_iviews.pdf
-[slides-jsr168-iviews]: /presentations/jsr168_iviews.pdf
+[slides-data-breach]:  {% link presentations/snyder_data_breach_resistant_systems.pdf %}
+[slides-transforming-clinical]: {% link presentations/transforming_clinical_processes.pdf %}
+[slides-jwt]: {% link presentations/jwts_and_their_application.pdf %}
+[slides-quill]: {% link  presentations/revealjs/quill.html %}
+[slides-cursor]: {% link presentations/revealjs/seamless-immutable-cursor.html %}
+[slides-webpack]: {% link presentations/revealjs/webpack-hmr.html %}
+[slides-hostile]: {% link presentations/snyder_agile_in_hostile_environments.pdf %}
+[slides-monadic-logging]: {% link presentations/revealjs/monadic-logging.html %}
+[slides-functional-wrappers]: {% link presentations/revealjs/scala-jdbc.html %}
+[slides-ajax-iviews]: {% link presentations/ajax_iviews.pdf %}
+[slides-jsr168-iviews]: {% link presentations/jsr168_iviews.pdf %}
 [org-phillyete]: http://phillyemergingtech.com/
 [org-boxworks]: https://www.box.com/boxworks
 [org-phillyjug]: https://www.meetup.com/PhillyJUG/
@@ -68,7 +68,7 @@ title: Presentations
 [repo-monadic-logging]: https://github.com/MartinSnyder/monadic-logging
 [repo-functional-wrappers]: https://github.com/MartinSnyder/scala-jdbc
 [repo-functional-js]: https://github.com/MartinSnyder/libertyjs-functional-programming-in-js
-[icon-audio]: /asset/icon/audio.png
-[icon-code]: /asset/icon/github.png
-[icon-slides]: /asset/icon/slides.png
-[icon-video]: /asset/icon/video.png
+[icon-audio]: {% link asset/icon/audio.png %}
+[icon-code]: {% link asset/icon/github.png %}
+[icon-slides]: {% link asset/icon/slides.png %}
+[icon-video]: {% link asset/icon/video.png %}

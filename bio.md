@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bio
+title:  Bio
 ---
 
 Martin is a technology executive with extensive experience in the software industry that includes building and driving high-performance product development organizations. Much of his career was spent as CTO of [Wingspan Technology][wingspan], a software firm focused on document management solutions, where he was hired to build the software engineering practice and led the technical team for 15 years before the company’s sale to [IQVIA][iqvia] in 2017. At Wingspan he served as program executive and architect for multiple SaaS products and document management solutions popular in regulated industries, especially the Life Sciences industry.

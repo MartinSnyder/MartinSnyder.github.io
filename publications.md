@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications
+title:  Publications
 ---
 
 | Title                                                                 | Publisher                 |
@@ -22,12 +22,12 @@ title: Publications
 [performance-enhancement]: {% link articles/performance-enhancement.md %}
 [attention-to-detail]: {% link articles/attention-to-detail.md %}
 [aggression-and-risk]: {% link articles/aggression-and-risk.md %}
+[ultima5]: {% link articles/ultima5.md %}
 [robotic-control]: http://www.drdobbs.com/tools/robotic-control-3d-guis/184405243
 [robots-rts]: https://web.stanford.edu/group/arl/cgi-bin/drupal/sites/default/files/public/publications/JonesS%202001.pdf
 [simpleorm]: http://www.drdobbs.com/database/object-relational-mapping-in-java-with-s/184406344
 [jsr168]: http://www.drdobbs.com/jvm/developing-jsr-168-portlets/184406282
 [javabook]: https://www.amazon.com/Java-JavaScript-Programmers-Michael-Daconta/dp/0471183598
-[ultima5]: {% link articles/ultima5.md %}
 [pub-drdobbs]: http://www.drdobbs.com/
 [pub-wiley]: https://www.wiley.com
 [pub-ieeesmc]: http://www.ieeesmc.org/conferences/calendar/smc-society-conferences
