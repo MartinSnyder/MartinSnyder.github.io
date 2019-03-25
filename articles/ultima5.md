@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Ultima V Player's Guide
-permalink: /ultima5/
 ---
 
 # Credits #

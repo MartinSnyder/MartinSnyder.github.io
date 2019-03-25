@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-permalink: /projects
 ---
 
 A selection of projects that are designed for sharing.

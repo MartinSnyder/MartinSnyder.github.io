@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Publications
-permalink: /publications
 ---
 
 | Title                                                                 | Publisher                 |
@@ -26,7 +25,7 @@ permalink: /publications
 [simpleorm]: http://www.drdobbs.com/database/object-relational-mapping-in-java-with-s/184406344
 [jsr168]: http://www.drdobbs.com/jvm/developing-jsr-168-portlets/184406282
 [javabook]: https://www.amazon.com/Java-JavaScript-Programmers-Michael-Daconta/dp/0471183598
-[ultima5]: /ultima5/
+[ultima5]: {% link articles/ultima5.md %}
 [pub-drdobbs]: http://www.drdobbs.com/
 [pub-wiley]: https://www.wiley.com
 [pub-ieeesmc]: http://www.ieeesmc.org/conferences/calendar/smc-society-conferences
