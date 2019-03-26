@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Passing the Torch - Philly JUG
-date:   2019-02-08
 ---
 
 When I first considered leading the [Philly JUG][philly-jug], I strongly suspected that whether I took the job or not, I would come to regret it. It was a daunting responsibility to take on, but the JUG community was something that I had valued for quite some time and I didn’t want to risk losing it entirely.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Volvo S80 Car Fire
-date:   2012-05-17
 ---
 
 A couple of weeks ago, just after I arrived at work, people were drawn outside by a car fire in the parking lot.  I followed the crowd, and stood amongst all the people who were wondering who’s car it was.

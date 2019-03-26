@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Functional Wrappers for Legacy APIs
-date:   2013-04-07
 ---
 
 I published the written version of my [PHASE/Philly JUG presentation][video-functional-wrappers] today: [Functional Wrappers for Legacy APIs][functional-wrappers].
