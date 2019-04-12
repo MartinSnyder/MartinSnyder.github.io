@@ -22,11 +22,13 @@ title:  Presentations
 | Stop goofing around during build cycles with webpack HMR            | [LibertyJS][org-libertyjs]                | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
 | [Tech People Podcast Interview][podcast-tech-people]                | [Tech People][org-techpeople]             |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
 | [TechCast #96 – Philly ETE Happy Hour Chat][podcast-techcast]       | [TechCast][org-techcast]                  |                                                        |                                                 | [![Audio][icon-audio]][audio-techcast-interview]    |
+| [Websockets in http4s][abstract-chatserver]                         | [NEScala][org-nescala]                    |                                                        | [![Code][icon-code]][repo-chatserver]           | [![Video][icon-video]][video-chatserver]            |
 
 [abstract-jwt]: https://www.meetup.com/PhillyJUG/events/236825899/
 [abstract-data-breach]: https://2017.phillyemergingtech.com/session/building-data-breach-and-subpoena-resistant-applications/
 [abstract-hostile]: http://2016.phillyemergingtech.com/session/delivering-agile-methodologies-and-emerging-technologies-in-hostile-environments/
 [abstract-embracing]: https://tmfrefmodel.com/2018/12/12/free-webinar-wingspan/
+[abstract-chatserer]: https://nescala.io/talks.html#http4s-chat-server
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
 [slides-data-breach]:  {% link presentations/snyder_data_breach_resistant_systems.pdf %}
@@ -45,7 +47,7 @@ title:  Presentations
 [org-phillyjug]: https://www.meetup.com/PhillyJUG/
 [org-react-philly]: https://www.meetup.com/React-Philly/
 [org-libertyjs]: http://www.libertyjs.com/
-[org-nescala]: http://www.nescala.org/
+[org-nescala]: http://www.nescala.io/
 [org-phase]: https://www.meetup.com/scala-phase/
 [org-asug]: https://www.asug.com/
 [org-techpeople]: http://www.gistia.com/techpeople/
@@ -60,6 +62,7 @@ title:  Presentations
 [video-monadic-logging]: https://www.youtube.com/watch?v=t-YX55ZF4g0
 [video-functional-wrappers]: https://player.vimeo.com/video/75591447
 [video-tmf-ems-panel]: https://register.gotowebinar.com/register/8743798429008916226
+[video-chatserver]: https://www.youtube.com/watch?v=rB5RM-dc4Sg
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
@@ -68,6 +71,7 @@ title:  Presentations
 [repo-monadic-logging]: https://github.com/MartinSnyder/monadic-logging
 [repo-functional-wrappers]: https://github.com/MartinSnyder/scala-jdbc
 [repo-functional-js]: https://github.com/MartinSnyder/libertyjs-functional-programming-in-js
+[repo-chatserver]: https://github.com/MartinSnyder/http4s-chatserver
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
