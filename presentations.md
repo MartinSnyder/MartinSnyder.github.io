@@ -29,7 +29,7 @@ title: Presentations
 [abstract-data-breach]: https://2017.phillyemergingtech.com/session/building-data-breach-and-subpoena-resistant-applications/
 [abstract-hostile]: http://2016.phillyemergingtech.com/session/delivering-agile-methodologies-and-emerging-technologies-in-hostile-environments/
 [abstract-embracing]: https://tmfrefmodel.com/2018/12/12/free-webinar-wingspan/
-[abstract-chatserer]: https://nescala.io/talks.html#http4s-chat-server
+[abstract-chatserver]: https://nescala.io/talks.html#http4s-chat-server
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
 [org-phillyete]: http://phillyemergingtech.com/
