@@ -16,6 +16,7 @@ title: Presentations
 | Functional Wrappers for legacy APIs                                 | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
 | Immutability in JavaScript and seamless-immutable-cursor            | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
 | [JWTs and Their Application][abstract-jwt]                          | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
+| Live Coding a Chat Server with WebSockets and http4s                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
 | Live coding a CRUD database in Scala                                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
 | Monadic Logging and You!                                            | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | Transforming Clinical Processes Using Box                           | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
@@ -52,6 +53,7 @@ title: Presentations
 [video-functional-wrappers]: https://player.vimeo.com/video/75591447
 [video-tmf-ems-panel]: https://register.gotowebinar.com/register/8743798429008916226
 [video-chatserver]: https://www.youtube.com/watch?v=rB5RM-dc4Sg
+[video-phase-chat]: https://www.youtube.com/watch?v=py_V_7gD5WU
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
@@ -61,6 +63,7 @@ title: Presentations
 [repo-functional-wrappers]: https://github.com/MartinSnyder/scala-jdbc
 [repo-functional-js]: https://github.com/MartinSnyder/libertyjs-functional-programming-in-js
 [repo-chatserver]: https://github.com/MartinSnyder/http4s-chatserver
+[repo-phase-chat]: https://github.com/MartinSnyder/phase-http4s
 
 [slides-data-breach]: {% link presentations/snyder_data_breach_resistant_systems.pdf %}
 [slides-transforming-clinical]: {% link presentations/transforming_clinical_processes.pdf %}
