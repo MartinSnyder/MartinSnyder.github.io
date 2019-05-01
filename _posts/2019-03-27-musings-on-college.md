@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Musings on College
+title: Musings on College
 ---
 
 This is another piece I saw in the archives as I was moving my old files to the cloud. Right around the time my oldest

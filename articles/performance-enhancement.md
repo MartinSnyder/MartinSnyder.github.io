@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Performance Enhancement
+title: Performance Enhancement
 ---
 
 A friend of mine recently brought to my attention the use of performance enhancing drugs (PEDs) in the workplace, especially in [Silicon Valley][provigil-news]. I suspect this is not limited to the software field and probably either has or soon will bleed over into other “knowledge worker” fields. Caffeine is now a gateway drug.
@@ -8,6 +8,7 @@ A friend of mine recently brought to my attention the use of performance enhanci
 The sports world has something to teach us here. Back in the 70’s, bodybuilders and power lifters started experimenting with steroids and
 40 years later it’s hard to imagine a sport that hasn’t had a PED scandal. It’s not hard to see why athletes were (and continue to be) so
 easily tempted:
+
 1. Their careers are relatively short.
 2. Their earning potential after their athletic career is often limited, so they want to maximize their earnings while they can.
 3. Their short career can be cut even shorter at any time by injuries, which can be either prevented, ignored, or recovered from faster through the use of PEDs.
@@ -30,6 +31,7 @@ replace “surgically” with “chemically” or replace “eyes” with some o
 thing to lead to serious objections from people in both sports and medicine.
 
 I would now like to introduce you to [Oscar Pistorius][pistorius]:
+
 > Oscar Leonard Carl Pistorius (born 22 November 1986) is a South African sprint runner. Known as the “Blade Runner” and “the fastest man on no
 > legs”, Pistorius, who has a double amputation, is the world record holder in the 100, 200 and 400 metres (sport class T44) events and runs
 > with the aid of Cheetah Flex-Foot carbon fibre transtibial artificial limbs by Ossur.
@@ -43,6 +45,7 @@ world record fell in the first Olympic Games where those technologies were intro
 out [Anthony Robles][robles]. he is a disabled athlete who has won in open competition.
 
 Provigil seems to match the profile of sports-related PEDs like steroids and HGH. There are both short and long term side effects. There are potentially additional long term effects that are not known or understood yet. People who use them illegally generally have a low likelihood of criminal prosecution. Because of these similarities, I’d like to make the following predictions regarding how this is going to play out:
+
 1. Leadership will initially have tacit approval of such things, and may even encourage it in some cases. Ultimately, this will fade because companies will not want to expose themselves to the legal liability resulting from creating a culture that pressures their workforce into using illegal drugs and exposing themselves to long term health consequences.
 2. Even though the average employee would probably rather not take such drugs, nor would they enjoy competing against other members of the talent pool, there will be resistance to drug testing in this area. This will happen because the workforce will not want to grant control and leverage in this area to leadership.
 

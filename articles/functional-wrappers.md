@@ -1,13 +1,14 @@
 ---
 layout: page
-title:  Functional Wrappers for Legacy APIs
+title: Functional Wrappers for Legacy APIs
 ---
 
 There are many challenges in introducing a new technology into an existing project or organization. To be successful, you normally need to be
 able to achieve one or all of the following:
-* Experiment with the new technology incrementally without incurring a massive adoption cost
-* Showcase the strengths of the technology immediately
-* Give a concrete benefit to the people on the front lines of the organization
+
+- Experiment with the new technology incrementally without incurring a massive adoption cost
+- Showcase the strengths of the technology immediately
+- Give a concrete benefit to the people on the front lines of the organization
 
 This article demonstrates techniques that can be used for such an introduction by examining a contrived example of building a functional API
 for JDBC[^1] using Scala. While the stated example is contrived, the inspiration for it is an enterprise integration API called the Documentum
@@ -23,27 +24,28 @@ facilities we construct here, will look like this:
 
 {% highlight scala %}
 val connectionInfo = new Jdbc.ConnectionInfo("jdbc:h2:mem:test1;DB_CLOSE_DELAY=-1")
- 
+
 val mapper = new ObjectMapper().registerModule(DefaultScalaModule)
- 
+
 def queryToJSON(conn: Jdbc.ConnectionInfo, sql: String) =
-    Jdbc.withResultsIterator(conn, sql, it => mapper.writeValueAsString(it))
+Jdbc.withResultsIterator(conn, sql, it => mapper.writeValueAsString(it))
 {% endhighlight %}
 
 Lines 3 sets up a [Jackson][jackson] mapper which can convert Scala data structures to JSON. Lines 5-6 use the functional wrapper we created to iterate over our result set performing our desired data conversion. We can then write a console app as follows:
 
 {% highlight scala %}
 def main(args: Array[String]) {
-  queryToJSON(connectionInfo, "SELECT * FROM EXAMPLE") match {
-    case Success(json) => println(json)
-    case Failure(e) => println(e.getMessage)
-  }
+queryToJSON(connectionInfo, "SELECT \* FROM EXAMPLE") match {
+case Success(json) => println(json)
+case Failure(e) => println(e.getMessage)
+}
 }
 {% endhighlight %}
 
 So that’s where we’re headed. Now let’s take a closer look at how to get there!
 
 We have two design goals when creating a functional wrapper for a non-functional API:
+
 1. Hide state from your callers as much as possible
 2. Reshape the API in terms of a collections API as much as possible
 
@@ -53,11 +55,11 @@ While we won’t be able to achieve this goal ourselves, we can still allow the 
 Of course, you’ll have a tough time hiding state if you can’t recognize it. Let’s start by looking at a common code block in JDBC code written in Java:
 
 {% highlight scala %}
-Connection conn =  DriverManager.getConnection("url", "user", "pass");
+Connection conn = DriverManager.getConnection("url", "user", "pass");
 try {
-    ...
+...
 } finally {
-    conn.close();
+conn.close();
 }
 {% endhighlight %}
 
@@ -82,9 +84,10 @@ def withConnection (connInfo: ConnectionInfo, f: Connection => Unit) { ... }
 {% endhighlight %}
 
 That declaration defines a new function named withConnection where:
-* The first parameter is an object of type ConnectionInfo
-* The second parameter is a function that takes a JDBC Connection and returns nothing (Unit is a special type which is effectively nothing)
-* The function does not return a value
+
+- The first parameter is an object of type ConnectionInfo
+- The second parameter is a function that takes a JDBC Connection and returns nothing (Unit is a special type which is effectively nothing)
+- The function does not return a value
 
 The second argument is the most important concept at this point. In Scala (and generally in all functional languages), a function is a
 “first class object” which means that a function can be stored in a variable or passed as a parameter like any other object. Also, because
@@ -98,18 +101,19 @@ Now we can examine the body of the function:
 
 {% highlight scala %}
 def withConnection (connInfo: ConnectionInfo, f: Connection => Unit) {
-    val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
-            connInfo.password)
-    try {
-        f(conn)
-    }
-    finally {
-        conn.close()
-    }
+val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
+connInfo.password)
+try {
+f(conn)
+}
+finally {
+conn.close()
+}
 }
 {% endhighlight %}
 
 This implementation is pretty much what one would expect, and looks similar to our original Java pattern. The advantage is twofold:
+
 1. We only write this try/finally logic once for our application vs. in multiple places
 2. We are hiding the existence of the connection state from our callers. They just need to operate on a connection, they will not need to know how to create or manage one.
 
@@ -120,14 +124,14 @@ allow any return type
 
 {% highlight scala %}
 def withConnection [T] (connInfo: ConnectionInfo, f: Connection => T): T = {
-    val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
-            connInfo.password)
-    try {
-        f(conn)
-    }
-    finally {
-        conn.close()
-    }
+val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
+connInfo.password)
+try {
+f(conn)
+}
+finally {
+conn.close()
+}
 }
 {% endhighlight %}
 
@@ -143,11 +147,11 @@ Here is our final version:
 
 {% highlight scala %}
 def withConnection [T] (connInfo: ConnectionInfo, f: Connection => T): Try[T] = {
-    val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
-            connInfo.password)
-    val result = Try(f(conn))
-    conn.close()
-    result
+val conn = DriverManager.getConnection(connInfo.url, connInfo.username,
+connInfo.password)
+val result = Try(f(conn))
+conn.close()
+result
 }
 {% endhighlight %}
 
@@ -155,17 +159,18 @@ We can now do the same thing for acting on a JDBC statement:
 
 {% highlight scala %}
 def withStatement [T] (connInfo: ConnectionInfo, f: Statement => T): Try[T] = {
-    def privFun(conn: Connection) = {
-        val stmt = conn.createStatement()
-        try {
-            f(stmt)
-        }
-        finally {
-            stmt.close()
-        }
-    }
- 
+def privFun(conn: Connection) = {
+val stmt = conn.createStatement()
+try {
+f(stmt)
+}
+finally {
+stmt.close()
+}
+}
+
     withConnection(connInfo, privFun)
+
 }
 {% endhighlight %}
 
@@ -182,18 +187,19 @@ Completing our matched set, we provide withResultSet, which introduces no new co
 
 {% highlight scala %}
 def withResultSet [T] (connInfo: ConnectionInfo, sql: String,
-        f: ResultSet => T): Try[T] = {
-    def privFun(stmt: Statement) = {
-        val resultSet = stmt.executeQuery(sql)
-        try {
-            f(resultSet)
-        }
-        finally {
-            resultSet.close()
-        }
-    }
- 
+f: ResultSet => T): Try[T] = {
+def privFun(stmt: Statement) = {
+val resultSet = stmt.executeQuery(sql)
+try {
+f(resultSet)
+}
+finally {
+resultSet.close()
+}
+}
+
     withStatement(connInfo, privFun)
+
 }
 {% endhighlight %}
 
@@ -201,14 +207,16 @@ Managing connections, statements and result sets[^7] accomplishes only part of o
 from dealing with the management of these objects, we have still have left our callers dealing with the native API objects.
 
 ResultSet, in particular, presents a very unwieldy interface. It combines:
-* State regarding the result set
-* Iteration
-* Data structure of the results
-* Read access to the “current” row
-* Write access to the “current” row
+
+- State regarding the result set
+- Iteration
+- Data structure of the results
+- Read access to the “current” row
+- Write access to the “current” row
 
 A result set already has many characteristics of a collection, so it is an obvious candidate to be converted to the collections API. There
 are three high level targets:
+
 1. A concrete collection, like a list
 2. An iterator
 3. A stream
@@ -225,8 +233,8 @@ Here’s a simple wrapper to get us started:
 
 {% highlight scala %}
 class ResultsIterator(resultSet: ResultSet) extends Iterator[ResultSet] {
-    def hasNext = resultSet.next()
-    def next() = resultSet
+def hasNext = resultSet.next()
+def next() = resultSet
 }
 {% endhighlight %}
 
@@ -249,9 +257,10 @@ In order to construct our map, we need to determine the names of the columns ava
 
 {% highlight scala %}
 val columnNames: Seq[String] = {
-    val rsmd: ResultSetMetaData = resultSet.getMetaData
- 
+val rsmd: ResultSetMetaData = resultSet.getMetaData
+
     for (i <- 1 to rsmd.getColumnCount) yield rsmd.getColumnName(i)
+
 }
 {% endhighlight %}
 
@@ -263,9 +272,9 @@ Armed with the list of column names for a given result set, we can construct a n
 
 {% highlight scala %}
 private def buildRowMap(resultSet: ResultSet): Map[String, AnyRef] = {
-    (
-        for (c <- columnNames) yield c -> resultSet.getObject(c)
-    ).toMap
+(
+for (c <- columnNames) yield c -> resultSet.getObject(c)
+).toMap
 }
 {% endhighlight %}
 
@@ -277,11 +286,12 @@ Now we can produce an updated Iterator implementation using our new mechanism:
 
 {% highlight scala %}
 class ResultsIterator (resultSet: ResultSet) extends Iterator[Map[String, AnyRef]] {
-    val columnNames = { … }
-    private def buildRowMap(resultSet: ResultSet) = { ... }
- 
+val columnNames = { … }
+private def buildRowMap(resultSet: ResultSet) = { ... }
+
     def hasNext = resultSet.next()
     def next() = buildRowMap(resultSet)
+
 }
 {% endhighlight %}
 
@@ -296,10 +306,10 @@ Our approach to this is to manage the state of the result set in our iterator in
 
 {% highlight scala %}
 private def getNextRow(resultSet: ResultSet) = {
-    if (resultSet.next())
-        Some(buildRowMap(resultSet))
-    else
-        None
+if (resultSet.next())
+Some(buildRowMap(resultSet))
+else
+None
 }
 {% endhighlight %}
 
@@ -312,19 +322,20 @@ Observe the final Iterator:
 {% highlight scala %}
 class ResultsIterator (resultSet: ResultSet) extends Iterator[Map[String, AnyRef]]
 {
-    val columnNames = { … }
-    private def buildRowMap(resultSet: ResultSet) = { … }
-    private def getNextRow(resultSet: ResultSet) = { … }
- 
+val columnNames = { … }
+private def buildRowMap(resultSet: ResultSet) = { … }
+private def getNextRow(resultSet: ResultSet) = { … }
+
     var nextRow = getNextRow(resultSet)
- 
+
     def hasNext = nextRow.isDefined
- 
+
     def next() = {
         val rowData = nextRow.get
         nextRow = getNextRow(resultSet)
         rowData
     }
+
 }
 {% endhighlight %}
 
@@ -337,9 +348,10 @@ mechanics to our callers:
 
 {% highlight scala %}
 def withResultsIterator [T] (connInfo: ConnectionInfo, sql: String,
-        itFun: ResultsIterator => T): Try[T] =
- 
+itFun: ResultsIterator => T): Try[T] =
+
     withResultSet(connInfo, sql, resultSet => itFun(new ResultsIterator(resultSet)))
+
 {% endhighlight %}
 
 That’s it! We can now write functional programs against JDBC. More importantly, we can identify non-functional characteristics in APIs that we
