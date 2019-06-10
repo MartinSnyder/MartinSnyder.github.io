@@ -9,6 +9,7 @@ title: Presentations
 | AJAX: What it is and What it Can Do for Your iViews                 | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
 | Building a Custom Query Engine with Quill                           | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
 | [Building Data Breach Resistant Systems][abstract-data-breach]      | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
+| Code Talk: Chat with a CTO                                          | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
 | Converting a JSR-168 Portlet to an SAP iView                        | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
 | Developing Web Services for Documentum                              | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing] | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
@@ -43,6 +44,7 @@ title: Presentations
 [org-techpeople]: http://www.gistia.com/techpeople/
 [org-techcast]: https://chariotsolutions.com/podcasts/show/techcast/
 [org-tmf-ems]: https://tmfrefmodel.com/ems/
+[org-codetalk]: https://twitter.com/hashtag/codetalk
 [video-data-breach]: https://www.youtube.com/watch?v=WEK203FC1y8
 [video-transforming-clinical]: https://cloud.app.box.com/s/5hefu7oisqwha3okqs35ukub7nvg3ald
 [video-quill]: https://www.youtube.com/watch?v=E5mtBTEgmLE
@@ -54,6 +56,7 @@ title: Presentations
 [video-tmf-ems-panel]: https://register.gotowebinar.com/register/8743798429008916226
 [video-chatserver]: https://www.youtube.com/watch?v=rB5RM-dc4Sg
 [video-phase-chat]: https://www.youtube.com/watch?v=py_V_7gD5WU
+[video-cto-chat]: https://www.youtube.com/watch?v=Fe02gMi_PoU
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
