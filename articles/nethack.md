@@ -3354,7 +3354,7 @@ title: NetHack Battle Report
         <p>
             I run like the wind, avoiding all but my fastest pursuers.  I wear my ring of levitation
             and it helps me to avoid traps and other pitfalls.  I slowly rise through Gehennom.  On a
-            few occasions, I get a feeling of deja vu and sense that I'm somehow covering the sam
+            few occasions, I get a feeling of deja vu and sense that I'm somehow covering the same
             ground over and over.  Since I'm moving so fast, and filled with such excitement I really
             can't say for sure.
         </p>
