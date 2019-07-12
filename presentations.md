@@ -20,6 +20,7 @@ title: Presentations
 | Live Coding a Chat Server with WebSockets and http4s                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
 | Live coding a CRUD database in Scala                                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
 | Monadic Logging and You!                                            | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
+| My Favorite Tweets                                                  |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                           | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
 | Stop goofing around during build cycles with webpack HMR            | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
 | [Tech People Podcast Interview][podcast-tech-people]                | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
@@ -79,6 +80,7 @@ title: Presentations
 [slides-functional-wrappers]: {% link presentations/revealjs/scala-jdbc.html %}
 [slides-ajax-iviews]: {% link presentations/ajax_iviews.pdf %}
 [slides-jsr168-iviews]: {% link presentations/jsr168_iviews.pdf %}
+[slides-tweets]: {% link presentations/revealjs/favorite-tweets.html %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
