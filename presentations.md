@@ -7,6 +7,7 @@ title: Presentations
 | ------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- |
 | [Agile Methodologies in Hostile Environments][abstract-hostile]     | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-hostile]               |                                                 | [![Video][icon-video]][video-hostile]               |
 | AJAX: What it is and What it Can Do for Your iViews                 | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
+| All Kinds of Free                                                   |                                        | [![Slides][icon-slides]][slides-free]                  |                                                 |                                                     |
 | Building a Custom Query Engine with Quill                           | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
 | [Building Data Breach Resistant Systems][abstract-data-breach]      | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
 | Code Talk: Chat with a CTO                                          | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
@@ -81,6 +82,7 @@ title: Presentations
 [slides-ajax-iviews]: {% link presentations/ajax_iviews.pdf %}
 [slides-jsr168-iviews]: {% link presentations/jsr168_iviews.pdf %}
 [slides-tweets]: {% link presentations/revealjs/favorite-tweets.html %}
+[slides-free]: {% link presentations/revealjs/all-kinds-of-free.html %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
