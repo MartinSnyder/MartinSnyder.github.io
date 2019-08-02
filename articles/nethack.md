@@ -2547,7 +2547,7 @@ title: NetHack Battle Report
         </p>
         <table class="innertable">
         <tr>
-            <td style="width:25%"><img src="nethack/castle.jpg"/></td>
+            <td style="width:25%"><img src="nethack/castle.jpg" title="This is the only image without alt-text" /></td>
             <td>
                 <p>
                     I levitate over some deep pits.  A foul warm air emanates from them
