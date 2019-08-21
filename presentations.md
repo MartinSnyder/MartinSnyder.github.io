@@ -14,6 +14,7 @@ title: Presentations
 | Converting a JSR-168 Portlet to an SAP iView                        | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
 | Developing Web Services for Documentum                              | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing] | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
+| Functional Programming in Java                                      |                                        | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              |                                                     |
 | Functional Programming in JavaScript Workshop                       | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
 | Functional Wrappers for legacy APIs                                 | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
 | Immutability in JavaScript and seamless-immutable-cursor            | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
@@ -67,6 +68,7 @@ title: Presentations
 [repo-monadic-logging]: https://github.com/MartinSnyder/monadic-logging
 [repo-functional-wrappers]: https://github.com/MartinSnyder/scala-jdbc
 [repo-functional-js]: https://github.com/MartinSnyder/libertyjs-functional-programming-in-js
+[repo-fp-java]: https://github.com/MartinSnyder/fp-java
 [repo-chatserver]: https://github.com/MartinSnyder/http4s-chatserver
 [repo-phase-chat]: https://github.com/MartinSnyder/phase-http4s
 
@@ -83,6 +85,7 @@ title: Presentations
 [slides-jsr168-iviews]: {% link presentations/jsr168_iviews.pdf %}
 [slides-tweets]: {% link presentations/revealjs/favorite-tweets.html %}
 [slides-free]: {% link presentations/revealjs/all-kinds-of-free.html %}
+[slides-fp-java]: {% link presentations/revealjs/fp-java.html %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
