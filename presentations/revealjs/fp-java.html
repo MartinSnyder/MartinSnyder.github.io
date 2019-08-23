@@ -9,6 +9,11 @@
 
     <title>Functional Programming in Java - Martin Snyder</title>
 
+    <!--
+        Rigor over policy
+        Narrow the scope of what's possible in any specific context
+    -->
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/black.css" />
@@ -33,12 +38,10 @@
         <section>
           <h1>Functional Programming in Java</h1>
           <p>
-            <small
-              ><a href="https://martinsnyder.net">Martin Snyder</a> /
-              <a href="https://twitter.com/MartinSnyder"
-                >@MartinSnyder</a
-              ></small
-            >
+            <small>
+              <a href="https://martinsnyder.net">Martin Snyder</a> /
+              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a>
+            </small>
           </p>
         </section>
 
@@ -49,14 +52,269 @@
         </section>
 
         <section>
+          <h3>Properties of Functions</h3>
+          <ul>
+            <li>Implicit dependencies</li>
+            <li>factor/combine</li>
+            <li>execution order</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Implications of Functions</h3>
+
+          <ul>
+            <li>
+              Immutability
+              <ul>
+                <li>
+                  Persistent Data Structures
+                  <ul>
+                    <li>
+                      Recursion
+                      <ul>
+                        <li>Higher Order Functions</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Expressions
+                  <ul>
+                    <li>
+                      Variables
+                      <ul>
+                        <li>
+                          Referential Transparency
+                          <ul>
+                            <li>Laziness</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h3>The Perils of Mutability</h3>
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                If you don&#39;t think managing state is tricky, consider the
+                fact that 80% of all problems in all complex systems are fixed
+                by rebooting.
+              </p>
+              &mdash; stuarthalloway (@stuarthalloway)
+              <a
+                href="https://twitter.com/stuarthalloway/status/1134806008528809985?ref_src=twsrc%5Etfw"
+                >June 1, 2019</a
+              >
+            </blockquote>
+          </section>
+
+          <section>
+            <h3>The Perils of Mutability</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              public class Person {
+                public String givenName;
+                public String familyName;
+
+                public boolean equals(Object o) { ... }
+                public int hashCode() { return Objects.hash(givenName, familyName); }
+                public String toString() { return givenName + " " + familyName; }
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>The Perils of Mutability</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              Person martin = new Person("Martin", "S");
+              Set&lt;Person&gt; people = new HashSet&lt;&gt;();
+      
+              people.add(martin);
+              martin.givenName = "Marty";
+              people.add(martin);
+              Set&lt;Person&gt; peopleCopy = new HashSet&lt;&gt;(people);</code></pre>
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              people                           : [Marty S, Marty S]
+              people.contains(... "Martin" ...): false
+              people.size()                    : 2
+              peopleCopy.size()                : 1</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Immutable</h3>
+            <blockquote
+              cite="https://www.merriam-webster.com/dictionary/immutable"
+            >
+              not capable of or susceptible to change
+            </blockquote>
+            -
+            <a href="https://www.merriam-webster.com/dictionary/immutable"
+              >merriam-webster.com</a
+            >
+          </section>
+
+          <section>
+            <h3>Immutability in Java</h3>
+            <ul>
+              <li>Strings</li>
+              <li>Numerics</li>
+              <li>Guava</li>
+              <li>Java 8 - Streams</li>
+              <li>Java 9 - collection factory methods</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Persistent data structure</h3>
+            <blockquote
+              cite="https://en.wikipedia.org/wiki/Persistent_data_structure"
+            >
+              In computing, a persistent data structure is a data structure that
+              always preserves the previous version of itself when it is
+              modified. Such data structures are effectively immutable...
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Persistent_data_structure"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Persistent Data Structure</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              public interface List&lt;T&gt; {
+                T head();
+                List&lt;T&gt; tail();
+                boolean isEmpty();
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Persistent Data Structure</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              class Empty&lt;T&gt; implements List&lt;T&gt; {
+                public T head() { throw new RuntimeException(".head() invoked on empty list"); }
+                public List&lt;T&gt; tail() { throw new RuntimeException(".tail() invoked on empty list"); }
+                public boolean isEmpty() { return true; }
+              }
+
+              class Node&lt;T&gt; implements List&lt;T&gt; {
+                private final T item;
+                private final List&lt;T&gt; next;
+        
+                public T head() { return item; }
+                public List&lt;T&gt; tail() { return next; }
+                public boolean isEmpty() { return false; }
+
+                Node(T item, List&lt;T&gt; next) { ... }
+              }</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Recursion</h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/Recursion">
+              Recursion (adjective: recursive) occurs when a thing is defined in
+              terms of itself or of its type ... The most common application of
+              recursion is in mathematics and computer science, where a function
+              being defined is applied within its own definition.
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Recursion">wikipedia.org</a>
+          </section>
+
+          <section>
+            <h3>Recursive Algorithm</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              static &lt;T&gt; int length(List&lt;T&gt; l) {
+                if (l.isEmpty()) {
+                  return 0;
+                }
+                else {
+                  return 1 + length(l.tail());
+                }
+              }</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Higher-order function</h3>
+            <blockquote
+              cite="https://en.wikipedia.org/wiki/Higher-order_function"
+            >
+              A higher-order function is a function that does at least one of
+              the following:
+
+              <ul>
+                <li>
+                  takes one or more functions as arguments (i.e. procedural
+                  parameters)
+                </li>
+                <li>returns a function as its result.</li>
+              </ul>
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Higher-order_function"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Generalized Recursion (Fold)</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              interface Combiner&lt;R, T&gt; {
+                R combine(R r, T t);
+              }
+          
+              static &lt;R, T&gt; R fold(R acc, List&lt;T&gt; l, Combiner&lt;R, T&gt; combiner) {
+                if (l.isEmpty()) {
+                  return acc;
+                }
+                else {
+                  R nextAcc = combiner.combine(acc, l.head());
+                  return fold(nextAcc, l.tail(), combiner);
+                }
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Recursion using Fold</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              static &lt;T&gt; int length(List&lt;T&gt; l) {
+                return fold(0, l, (acc, next) -&gt; acc + 1);
+              }
+
+              static &lt;T&gt; String listToString(List&lt;T&gt; l) {
+                return fold("", l, (acc, next) -&gt; acc + next.toString());
+              }
+
+              static int sum(List&lt;Integer&gt; l) {
+                return fold(0, l, (acc, next) -&gt; acc + next);
+              }</code></pre>
+          </section>
+        </section>
+
+        <section>
           <h1>Thank You!</h1>
           <p>
-            <small
-              ><a href="https://martinsnyder.net">Martin Snyder</a> /
-              <a href="https://twitter.com/MartinSnyder"
-                >@MartinSnyder</a
-              ></small
-            >
+            <small>
+              <a href="https://martinsnyder.net">Martin Snyder</a> /
+              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a>
+            </small>
           </p>
         </section>
       </div>
