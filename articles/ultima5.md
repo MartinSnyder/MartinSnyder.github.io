@@ -5,13 +5,32 @@ title: Ultima V Player's Guide
 
 ## Credits
 
-I found a file on ftp.uwp.edu, which provided a sketchy solution to the game. I used the table of mantras and words of power, and also the shadowlords names from that file. The author's name was Blue Dragon. Mark Mierzejewski and Detlef Koehlers were very helpful in putting the finishing touches on this file.
+I found a file on ftp.uwp.edu, which provided a sketchy solution to the game. I used the table
+of mantras and words of power, and also the shadowlords names from that file. The author's name
+was Blue Dragon. Mark Mierzejewski and Detlef Koehlers were very helpful in putting the finishing
+touches on this file. The world map was created by [Andrew Schultz](mailto:schultz.andrew@sbcglobal.net).
 
 ## Introduction
 
 Ultima 5 was written by Origin Systems, and was my favorite game in the series growing up. I replayed it in the mid-90's and wrote this guide when I did it. I'm posting it here for nostalgic reasons. If anyone still plays and finds it useful, shoot me a note.
 
 For people that are interested in playing, it looks like the best way to get a copy is with this bundle on [GOG.com][gog]: [Ultima™ 4+5+6 Bundle][ultima-bundle]
+
+## World Map
+
+This map (courtesy of [Andrew Schultz](mailto:schultz.andrew@sbcglobal.net)) shows the locations
+of all of the locations that can be entered on the top-level world map. This includes all towns,
+castles, keeps, huts, villages, dungeons, and shrines (marked with an abbreviation of the
+associated virtue).
+
+There are also a few special locations marked on the map such as the Glass Sword location,
+the waterfall entrance to the underworld, and the location of the Mandrake and Nightshade
+reagents (the reagents are only available at midnight).
+
+NOTE: The shrine of Spirituality is not on this map. You reach that shrine by entering _any_
+Moongate at exactly midnight.
+
+![Ultima V World Map][worldmap]
 
 ## Companions
 
@@ -227,3 +246,5 @@ In order to win the game, you must kill the three shadowlords, then get all four
 
 [gog]: https://www.gog.com
 [ultima-bundle]: https://www.gog.com/game/ultima_456
+
+[worldmap]: {% link asset/ultima5/world.png %}
