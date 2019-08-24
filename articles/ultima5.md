@@ -16,6 +16,16 @@ Ultima 5 was written by Origin Systems, and was my favorite game in the series g
 
 For people that are interested in playing, it looks like the best way to get a copy is with this bundle on [GOG.com][gog]: [Ultima™ 4+5+6 Bundle][ultima-bundle]
 
+## Documentation
+
+Most people playing this game today are unlikely to have the full (or any) documentation. Notably, the GOG version of Ultima V includes only a text version of the "Player's Guide" which is one of the least valuable documents.
+
+[openretro.org][openretro] is a good source of the original documents (search for the C64 version of Ultima V). As they don't support external linkage at the time of this update, the most important documents are mirrored here:
+
+- [Quick Reference][quick-reference] - If you read only one document, read this
+- [The Book of Lore][manual] - 60 pages of detailed information
+- [Remoh's Journal][journal] - The detailed Journal of Lord British's final quest. Needed to find his amulet without other clues.
+
 ## World Map
 
 This map (courtesy of [Andrew Schultz](mailto:schultz.andrew@sbcglobal.net)) shows the locations
@@ -246,5 +256,9 @@ In order to win the game, you must kill the three shadowlords, then get all four
 
 [gog]: https://www.gog.com
 [ultima-bundle]: https://www.gog.com/game/ultima_456
+[openretro]: https://openretro.org
 
 [worldmap]: {% link asset/ultima5/world.png %}
+[quick-reference]: {% link asset/ultima5/quick-reference.pdf %}
+[manual]: {% link asset/ultima5/manual.pdf %}
+[journal]: {% link asset/ultima5/journal.pdf %}
