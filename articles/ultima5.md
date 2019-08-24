@@ -20,7 +20,7 @@ For people that are interested in playing, it looks like the best way to get a c
 
 Most people playing this game today are unlikely to have the full (or any) documentation. Notably, the GOG version of Ultima V includes only a text version of the "Player's Guide" which is one of the least valuable documents.
 
-[Museum of Computer Adventure Game History][mocagh.org] is a good source for the original documents. The two most important ones are linked below.
+[Museum of Computer Adventure Game History][mocagh] is a good source for the original documents. The two most important ones are linked below.
 
 - [Quick Reference][quick-reference] - If you read only one document, read this
 - [Paths of Destiny][cluebook] - The official cluebook
@@ -255,7 +255,7 @@ In order to win the game, you must kill the three shadowlords, then get all four
 
 [gog]: https://www.gog.com
 [ultima-bundle]: https://www.gog.com/game/ultima_456
-[openretro]: https://openretro.org
+[mocagh]: https://mocagh.org/
 [cluebook]: https://mocagh.org/origin/u5-cluebook-alt.pdf
 [quick-reference]: https://mocagh.org/origin/u5-quickref.pdf
 
