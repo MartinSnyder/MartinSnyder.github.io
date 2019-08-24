@@ -20,11 +20,10 @@ For people that are interested in playing, it looks like the best way to get a c
 
 Most people playing this game today are unlikely to have the full (or any) documentation. Notably, the GOG version of Ultima V includes only a text version of the "Player's Guide" which is one of the least valuable documents.
 
-[openretro.org][openretro] is a good source of the original documents (search for the C64 version of Ultima V). As they don't support external linkage at the time of this update, the most important documents are mirrored here:
+[Museum of Computer Adventure Game History][mocagh.org] is a good source for the original documents. The two most important ones are linked below.
 
 - [Quick Reference][quick-reference] - If you read only one document, read this
-- [The Book of Lore][manual] - 60 pages of detailed information
-- [Remoh's Journal][journal] - The detailed Journal of Lord British's final quest. Needed to find his amulet without other clues.
+- [Paths of Destiny][cluebook] - The official cluebook
 
 ## World Map
 
@@ -176,18 +175,18 @@ You should only buy the best weapons. Don't waste time on intermediate ones. The
 | Magic Shield  | Bordermarch, Lord British's Castle |
 | Magic Bow     | Bordermarch, Britain               |
 | Magic Axe     | Yew                                |
-| Halberd       |                                    |
+| Halberd       | Trinsic, Serpent's Hold            |
 | Invis. Ring   | Buccaneer's Den                    |
 | Regen. Ring   | Bordermarch                        |
 | Prot. Ring    | Lord British's Castle              |
 
 ## UNDOCUMENTED SPELLS
 
-| CIRCLE | SPELL       | EFFECT          | REAGENTS                 |
-| ------ | ----------- | --------------- | ------------------------ |
-| 2      | In Xen Mani | Create Food     | Ginseng,Garlic,Mdrake    |
-| 6      | Rel Xen Bet | Turn Foe to Rat | Ash, Silk, Mdrake,Nshade |
-| ?      | An Ylem     | Negate Matter   | ??                       |
+| CIRCLE | SPELL       | EFFECT          | REAGENTS                  |
+| ------ | ----------- | --------------- | ------------------------- |
+| 1      | An Ylem     | Negate Matter   | Garlic, Moss              |
+| 2      | In Xen Mani | Create Food     | Ginseng, Garlic, Mdrake   |
+| 6      | Rel Xen Bet | Turn Foe to Rat | Ash, Silk, Mdrake, Nshade |
 
 ## THE CRYSTAL SHARDS
 
@@ -224,11 +223,11 @@ In order to destroy the shadowlords, you need to go to the keep of the principle
 Like most Role Playing Games, it is difficult to stay alive in the beginning. The game gets much easier once you buy your first magic axe. One approach to starting the game is the following.
 
 1. Walk from Iolo's Hut to Yew. Find the jail, and climb down the grating. At the East end of the East/West passage, there is a secret door on the South wall. If you follow that passage, you will find a silver sword in a barrel guarded by two rats. Towards the west end of that passage you can find Jaana who will join your party. You may want to buy extra garlic and ginseng before you leave so you won't run out of cure poison spells. If you are 5th level, then you should also buy the ingredients for, and make some magic unlock spells.
-2. When you leave Yew, go directly to Britain. Try to fight orcs and trolls while avoiding rats and snakes. By doing this you will get more treasure and less poison. In Britain, find Gwenno and get her to join your party. The go to the basement of Lord British's Castle. In the Southeast, there is one rooms which contains three chests, and another with a ring of regeneration hidden in a barrel. Get all these Items, and sell what you don't need.
-3. If you can cast the magic unlock spell, then go to Lord British's castle. Climb up to the top floor, where you can see the tiles on the roof. Along the South wall there is a passage leading North to Lord British's bedroom. If the guard is there, then just wait until night and he will leave. Cast magic unlock on the door, and pick up the rug right inside the door. This is the magic carpet and it will make your life a lot easier.
-4. Go south to Paws. Outside the Guild there is a dead tree. You can search this tree to find an invisibility ring. Don't use this ring, because you can sell it for over 200 at any weapons shop. There is another ring in the Southeast tower in Moonglow, but it really isn't worth going there just to get the ring.
-5. Go Northeast to Minoc. In the Northwest corner, there is a tree which you can search to find 5 skull keys. These keys will unlock magically locked doors. If you don't have the magic carpet yet, then go do step 3 now.
-6. Just south of Minoc is the dungeon Covetous. Use the magic carpet to get to it, and use the word of power Avidus to open the entrance. The first level of this dungeon is pretty easy. There are 8 rooms, and they all have a two handed weapon as treasure. Remember to attack or push the gravestones. The two fountains on that level will heal your party. When you have cleared all of the rooms on the first level, leave and sell everything in Minoc. You should now have enough money to return to Yew and buy a magic axe.
+2. When you leave Yew, go directly to Britain. Try to fight orcs and trolls while avoiding rats and snakes. By doing this you will get more treasure and less poison. In Britain, find Gwenno and get her to join your party.
+3. Go to Lord British's castle. Climb up to the top floor, where you can see the tiles on the roof. Along the South wall there is a passage leading North to Lord British's bedroom. If the guard is there, then just wait until night and he will leave. Push/Pull the cannon into position to destroy the door, and pick up the rug right inside the door. This is the magic carpet and it will make your life a lot easier.
+4. Go Northeast to Minoc. In the Northwest corner, there is a tree which you can search to find 5 skull keys. These keys will unlock magically locked doors. These regenerate every 24 hours.
+5. Just south of Minoc is the dungeon Covetous. Use the magic carpet to get to it, and use the word of power Avidus to open the entrance. The first level of this dungeon is pretty easy. There are 8 rooms, and they all have a two handed weapon as treasure. Remember to attack or push the gravestones. The two fountains on that level will heal your party. When you have cleared all of the rooms on the first level, leave and sell everything in Minoc. You should now have enough money to return to Yew and buy a magic axe.
+6. In the basement of Lord British's Castle. Along the southern hallway, there is a magically-locked room which contains three chests. At the cost of 2 karma per chest, you can find high-end equipment here to either use or sell.
 
 ## WINNING THE GAME
 
@@ -257,8 +256,7 @@ In order to win the game, you must kill the three shadowlords, then get all four
 [gog]: https://www.gog.com
 [ultima-bundle]: https://www.gog.com/game/ultima_456
 [openretro]: https://openretro.org
+[cluebook]: https://mocagh.org/origin/u5-cluebook-alt.pdf
+[quick-reference]: https://mocagh.org/origin/u5-quickref.pdf
 
 [worldmap]: {% link asset/ultima5/world.png %}
-[quick-reference]: {% link asset/ultima5/quick-reference.pdf %}
-[manual]: {% link asset/ultima5/manual.pdf %}
-[journal]: {% link asset/ultima5/journal.pdf %}
