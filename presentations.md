@@ -14,7 +14,7 @@ title: Presentations
 | Converting a JSR-168 Portlet to an SAP iView                        | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
 | Developing Web Services for Documentum                              | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing] | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
-| Functional Programming in Java                                      |                                        | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              |                                                     |
+| [Functional Programming in Java][abstract-fp-java]                  | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              |                                                     |
 | Functional Programming in JavaScript Workshop                       | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
 | Functional Wrappers for legacy APIs                                 | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
 | Immutability in JavaScript and seamless-immutable-cursor            | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
@@ -34,6 +34,7 @@ title: Presentations
 [abstract-hostile]: http://2016.phillyemergingtech.com/session/delivering-agile-methodologies-and-emerging-technologies-in-hostile-environments/
 [abstract-embracing]: https://tmfrefmodel.com/2018/12/12/free-webinar-wingspan/
 [abstract-chatserver]: https://nescala.io/talks.html#http4s-chat-server
+[abstract-fp-java]: https://www.meetup.com/PhillyJUG/events/263167279/
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
 [org-phillyete]: http://phillyemergingtech.com/
