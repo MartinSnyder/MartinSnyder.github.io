@@ -15,7 +15,6 @@
         * Narrow the scope of what's possible in any specific context
 
         Future of Java
-          Switch Expressions - https://openjdk.java.net/jeps/325 https://openjdk.java.net/jeps/354
           Pattern Matching - https://openjdk.java.net/jeps/305 (test, conditional extraction, binding)
           Pattern Matching for switch - https://openjdk.java.net/jeps/8213076
           Records (product type) - https://openjdk.java.net/jeps/8222777
@@ -105,14 +104,9 @@
                     Expressions
                     <ul>
                       <li>
-                        Variables
+                        Referential Transparency
                         <ul>
-                          <li>
-                            Referential Transparency
-                            <ul>
-                              <li>Lazy Evaluation</li>
-                            </ul>
-                          </li>
+                          <li>Lazy Evaluation</li>
                         </ul>
                       </li>
                     </ul>
@@ -151,6 +145,7 @@
           <section>
             <h3>Immutability in Java</h3>
             <ul>
+              <li>final keyword</li>
               <li>Strings</li>
               <li>Numerics</li>
               <li>Guava Collection</li>
@@ -193,10 +188,21 @@
             <pre><code data-trim data-noescape data-line-numbers>
               The magic number is 24</code></pre>
           </section>
-        </section>
 
-        <section>
-          <h3>Java Immutable Collections</h3>
+          <section>
+            <h3>Java Immutable Collections</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              List&lt;Integer&gt; intList = List.of(1, 2, 3, 4, 5);
+              intList.add(6);</code></pre>
+
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              Exception in thread "main" java.lang.UnsupportedOperationException
+                at java.base/java.util.ImmutableCollections.uoe(ImmutableCollections.java:72)
+                at java.base/java.util.ImmutableCollections$AbstractImmutableCollection.add(ImmutableCollections.java:76)
+                at com.martinsnyder.fpjava.ImmutableCollections.main(ImmutableCollections.java:8)</code></pre>
+          </section>
         </section>
 
         <section>
@@ -366,7 +372,7 @@
           </section>
 
           <section>
-            <h3>Recursion using Fold</h3>
+            <h3>Using Fold</h3>
             <pre><code data-trim data-noescape data-line-numbers>
               static &lt;T&gt; int length(List&lt;T&gt; l) {
                 return fold(0, l, (acc, next) -&gt; acc + 1);
@@ -379,6 +385,83 @@
               static int sum(List&lt;Integer&gt; l) {
                 return fold(0, l, (acc, next) -&gt; acc + next);
               }</code></pre>
+          </section>
+
+          <section>
+            <h3>Example</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              List&lt;Integer&gt; numbers = new Node&lt;&gt;(8, new Node&lt;&gt;(6, new Node&lt;&gt;(7, new Node&lt;&gt;(5, new Node&lt;&gt;(3, new Node&lt;&gt;(0, new Node&lt;&gt;(9, new Empty&lt;&gt;())))))));
+
+              System.out.println("List is " + listToString(numbers));
+              System.out.println("lengthRecursive is " + lengthRecursive(numbers));
+              System.out.println("Length is " + length(numbers));
+              System.out.println("Sum is " + sum(numbers));</code></pre>
+
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              List is 8675309
+              lengthRecursive is 7
+              Length is 7
+              Sum is 38</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Expression</h3>
+            <blockquote
+              cite="https://en.wikipedia.org/wiki/Expression_(computer_science)"
+            >
+              An expression in a programming language is a combination of one or
+              more constants, variables, operators, and functions that the
+              programming language interprets (according to its particular rules
+              of precedence and of association) and computes to produce ("to
+              return", in a stateful environment) another value.
+            </blockquote>
+            -
+            <a
+              href="https://en.wikipedia.org/wiki/Expression_(computer_science)"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Assignment vs. Expression</h3>
+            Before
+            <pre><code data-trim data-noescape data-line-numbers>
+              final int conditionalInt;
+              if (someInt % 2 == 0)
+                conditionalInt = 17;
+              else
+                conditionalInt = 20;</code></pre>
+
+            After
+            <pre><code data-trim data-noescape data-line-numbers>
+              final int expressionInt = (someInt % 2 == 0) ? 17 : 20;</code></pre>
+          </section>
+
+          <section>
+            <h3>Assignment vs. Expression (2)</h3>
+            Before
+            <pre><code data-trim data-noescape data-line-numbers>
+              final String conditionalString;
+              switch (conditionalInt) {
+                case 0: conditionalString  = "zero";         break;
+                case 1: conditionalString  = "one";          break;
+                default: conditionalString = "notZeroOrOne"; break;
+              }</code></pre>
+
+            After (Java 12 -
+            <a href="https://openjdk.java.net/jeps/325">JEP 325</a>, Java 13 -
+            <a href="https://openjdk.java.net/jeps/354">JEP 354</a>)
+            <pre><code data-trim data-noescape data-line-numbers>
+              final String expressionString =
+              switch (conditionalInt) {
+                case 0  -&gt; "zero";
+                case 1  -&gt; "one";
+                default -&gt; "notZeroOrOne";
+              };</code></pre>
           </section>
         </section>
 
