@@ -9,30 +9,6 @@
 
     <title>Functional Programming in Java - Martin Snyder</title>
 
-    <!--
-        TODO:
-        * Rigor over policy
-        * Narrow the scope of what's possible in any specific context
-
-        Future of Java
-          Pattern Matching - https://openjdk.java.net/jeps/305 (test, conditional extraction, binding)
-          Pattern Matching for switch - https://openjdk.java.net/jeps/8213076
-          Records (product type) - https://openjdk.java.net/jeps/8222777
-          Sealed Types (sum type) - https://openjdk.java.net/jeps/8227043
-
-          https://www.youtube.com/watch?v=BL6ba2dtprw
-          Java Futures, Early 2019 Edition - Brian Goetz
-
-        More Implications
-          Types
-            Algebraic Data Types (Intersection / Union types)
-              Pattern Matching
-
-        More Tweets
-          https://twitter.com/mathiasverraes/status/1153615691397943297?s=03
-          https://twitter.com/alexelcu/status/1161930030412423168?s=03
-    -->
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/black.css" />
@@ -137,7 +113,7 @@
               <li>No unexpected manipulations</li>
               <li>Sharing instead of copying</li>
               <li>Trivial caching</li>
-              <li>Multithreaded Accessible</li>
+              <li>Multi-threaded Accessible</li>
               <li>Reusable object instances</li>
             </ul>
           </section>
@@ -427,7 +403,7 @@
           </section>
 
           <section>
-            <h3>Assignment vs. Expression</h3>
+            <h3>Conditional Assignment vs. Expression</h3>
             Before
             <pre><code data-trim data-noescape data-line-numbers>
               final int conditionalInt;
@@ -442,7 +418,7 @@
           </section>
 
           <section>
-            <h3>Assignment vs. Expression (2)</h3>
+            <h3>Switch Assignment vs. Expression</h3>
             Before
             <pre><code data-trim data-noescape data-line-numbers>
               final String conditionalString;
@@ -464,6 +440,153 @@
               };</code></pre>
           </section>
         </section>
+
+        <section>
+          <section>
+            <h3>Definition - Referential Transparency</h3>
+            <blockquote
+              cite="https://en.wikipedia.org/wiki/Referential_transparency"
+            >
+              An expression is called referentially transparent if it can be
+              replaced with its corresponding value without changing the
+              program's behavior. This requires that the expression be pure,
+              that is to say the expression value must be the same for the same
+              inputs and its evaluation must have no side effects.
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Referential_transparency"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Referential Transparency Checker</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              interface Combiner&lt;R, T&gt; { R combine(T t1, T t2); }
+              interface Invocable&lt;T&gt; { T invoke(); }
+
+              static &lt;T, R&gt; boolean looksReferentiallyTransparent(
+                Invocable&lt;T&gt; invocable, Combiner&lt;R, T&gt; combiner) {
+                  T singleResult = invocable.invoke();
+                  R combinedSingleResult =
+                    combiner.combine(singleResult, singleResult);
+          
+                  R combinedDoubleInvocation =
+                    combiner.combine(invocable.invoke(), invocable.invoke());
+          
+                  return combinedSingleResult.equals(combinedDoubleInvocation);
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Referential Transparency Example</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              boolean floorLooksRT = looksReferentiallyTransparent(
+                  () -&gt; Math.floor(3.4d), Double::sum);
+              boolean nanoTimeLooksRT = looksReferentiallyTransparent(
+                  System::nanoTime, Long::sum);
+
+              System.out.println("floorLooksRT: " + floorLooksRT);
+              System.out.println("nanoTimeLooksRT: " + nanoTimeLooksRT);</code></pre>
+
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              floorLooksRT: true
+              nanoTimeLooksRT: false</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Lazy Evaluation</h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/Lazy_evaluation">
+              lazy evaluation [...] is an evaluation strategy which delays the
+              evaluation of an expression until its value is needed (non-strict
+              evaluation).
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Fibonacci Puzzler</h3>
+            <blockquote cite="https://projecteuler.net/problem=2">
+              Each new term in the Fibonacci sequence is generated by adding the
+              previous two terms. What is the total sum of the first 17 odd
+              Fibonacci numbers?
+            </blockquote>
+            Inspired by <a href="https://projecteuler.net">projecteuler.net</a>
+          </section>
+
+          <section>
+            <h3>Fibonacci Supplier</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              class FibonacciSupplier implements Supplier&lt;Long&gt; {
+                long a = 0;
+                long b = 1;
+
+                public Long get() {
+                  long next = a + b;
+                  a = b;
+                  b = next;
+                  return next;
+                }
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Puzzler Solution</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              Stream&lt;Long&gt; fibStream =
+                Stream.generate(new FibonacciSupplier());
+
+              // Sum of first 17 odd fibonacci numbers
+              long magicNumber = fibStream
+                  .filter(i -&gt; i % 2 != 0)
+                  .limit(17)
+                  .reduce(0L, Long::sum);
+
+              System.out.println("Solution is " + magicNumber);</code></pre>
+
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              Solution is 257113</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Type Systems</h3>
+          </section>
+        </section>
+
+        <!--
+          TODO:
+          * Rigor over policy
+          * Narrow the scope of what's possible in any specific context
+
+          Future of Java
+            Pattern Matching - https://openjdk.java.net/jeps/305 (test, conditional extraction, binding)
+            Pattern Matching for switch - https://openjdk.java.net/jeps/8213076
+            Records (product type) - https://openjdk.java.net/jeps/8222777
+            Sealed Types (sum type) - https://openjdk.java.net/jeps/8227043
+
+            https://www.youtube.com/watch?v=BL6ba2dtprw
+            Java Futures, Early 2019 Edition - Brian Goetz
+
+          More Implications
+            Types
+              Algebraic Data Types (Intersection / Union types)
+                Pattern Matching
+
+          More Tweets
+            https://twitter.com/mathiasverraes/status/1153615691397943297?s=03
+            https://twitter.com/alexelcu/status/1161930030412423168?s=03
+        -->
 
         <section>
           <h1>Thank You!</h1>
