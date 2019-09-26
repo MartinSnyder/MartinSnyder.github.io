@@ -560,28 +560,175 @@
 
         <section>
           <section>
-            <h3>Type Systems</h3>
+            <h3>Themes</h3>
+            <ul>
+              <li>Rigor over policy</li>
+              <li>Control scope / possibilities</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Implications regarding data types</h3>
+            <ul>
+              <li>
+                Algebraic Data Types
+                <ul>
+                  <li>
+                    Pattern Matching
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Algebraic Data Type</h3>
+            <blockquote
+              cite="https://en.wikipedia.org/wiki/Algebraic_data_type"
+            >
+              In computer programming, especially functional programming and
+              type theory, an algebraic data type is a kind of composite type,
+              i.e., a type formed by combining other types. Two common classes
+              of algebraic types are product types (i.e., tuples and records)
+              and sum types.
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Algebraic_data_type"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Conditional fields</h3>
+            Naive Example
+            <pre><code data-trim data-noescape data-line-numbers>
+              class Employee {
+                String name;
+                Date startDate;
+                boolean isCurrentEmployee;
+                Date endDate;
+        
+                long getMillisecondsOfService() {
+                  if (isCurrentEmployee) {
+                    return new Date().getTime() - startDate.getTime();
+                  } else {
+                    return endDate.getTime() - startDate.getTime();
+                  }
+                }
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Abstract Data Type Examples</h3>
+            Current
+            <pre><code data-trim data-noescape data-line-numbers>
+              interface EmploymentDates{}
+
+              class CurrentEmployee implements EmploymentDates {
+                Date startDate; }
+
+              class TerminatedEmployee implements EmploymentDates {
+                  Date startDate;
+                  Date endDate; }</code></pre>
+
+            Future (Candidate -
+            <a href="https://openjdk.java.net/jeps/8222777">JEP 359</a>,
+            <a href="https://openjdk.java.net/jeps/8227043">JEP 360</a>)
+            <pre><code data-trim data-noescape data-line-numbers>
+                sealed interface EmploymentDates{}
+  
+                record CurrentEmployee(Date startDate)
+                  implements EmploymentDates {}
+                record TerminatedEmployee(Date startDate, Date endDate)
+                  implements EmploymentDates {}</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Definition - Pattern Matching</h3>
+            <blockquote cite="https://en.wikipedia.org/wiki/Pattern_matching">
+              In computer science, pattern matching is the act of checking a
+              given sequence of tokens for the presence of the constituents of
+              some pattern.
+            </blockquote>
+            -
+            <a href="https://en.wikipedia.org/wiki/Pattern_matching"
+              >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Visitor Pattern 1/2</h3>
+            Example
+            <pre><code data-trim data-noescape data-line-numbers>
+              interface EmploymentDatesVisitor {
+                void visit(CurrentEmployee ce);
+                void visit(TerminatedEmployee te);
+              }
+              interface EmploymentDates{
+                void visit(EmploymentDatesVisitor visitor);
+              }
+              class CurrentEmployee implements EmploymentDates {
+                Date startDate;
+                public void visit(EmploymentDatesVisitor visitor) {
+                  visitor.visit(this);
+                }
+             }</code></pre>
+          </section>
+
+          <section>
+            <h3>Visitor Pattern 2/2</h3>
+            Example
+            <pre><code data-trim data-noescape data-line-numbers>
+              class MillisecondsOfServiceVisitor implements EmploymentDatesVisitor {
+                long millis;
+                public void visit(CurrentEmployee ce) {
+                  millis = new Date().getTime() - ce.startDate.getTime(); }
+                public void visit(TerminatedEmployee te) {
+                  millis = te.endDate.getTime() - te.startDate.getTime(); }
+              }
+
+              class EmployeeWithADT {
+                long getMillisecondsOfService() {
+                  MillisecondsOfServiceVisitor visitor = new MillisecondsOfServiceVisitor();
+                  employmentDates.visit(visitor);
+                  return visitor.millis;
+                }
+
+                String name;
+                EmploymentDates employmentDates;        
+              }</code></pre>
+          </section>
+
+          <section>
+            <h3>Enhanced Switch Expressions</h3>
+            Future (Candidate -
+            <a href="https://openjdk.java.net/jeps/8213076">Draft</a>, see also
+            <a href="https://openjdk.java.net/jeps/305">JEP 305</a>)
+            <pre><code data-trim data-noescape data-line-numbers>
+              class EmployeeWithADT {
+                long getMillisecondsOfService() {
+                  return switch (employmentDates) {
+                    case CurrentEmployee(var startDate) -&gt;
+                      new Date().getTime() - startDate.getTime();
+                      
+                    case TerminatedEmployee(var startDate, var endDate) -&gt;
+                      endDate.getTime() - startDate.getTime();
+                  }
+                }
+
+                String name;
+                EmploymentDates employmentDates;        
+              }</code></pre>
           </section>
         </section>
 
         <!--
-          TODO:
-          * Rigor over policy
-          * Narrow the scope of what's possible in any specific context
-
-          Future of Java
-            Pattern Matching - https://openjdk.java.net/jeps/305 (test, conditional extraction, binding)
-            Pattern Matching for switch - https://openjdk.java.net/jeps/8213076
-            Records (product type) - https://openjdk.java.net/jeps/8222777
-            Sealed Types (sum type) - https://openjdk.java.net/jeps/8227043
-
             https://www.youtube.com/watch?v=BL6ba2dtprw
             Java Futures, Early 2019 Edition - Brian Goetz
-
-          More Implications
-            Types
-              Algebraic Data Types (Intersection / Union types)
-                Pattern Matching
 
           More Tweets
             https://twitter.com/mathiasverraes/status/1153615691397943297?s=03
