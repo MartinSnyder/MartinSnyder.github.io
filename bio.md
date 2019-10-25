@@ -3,7 +3,9 @@ layout: page
 title: Bio
 ---
 
-Martin is a technology executive with extensive experience in the software industry that includes building and driving high-performance product development organizations. Much of his career was spent as CTO of [Wingspan Technology][wingspan], a software firm focused on document management solutions, where he was hired to build the software engineering practice and led the technical team for 15 years before the company’s sale to [IQVIA][iqvia] in 2017. At Wingspan he served as program executive and architect for multiple SaaS products and document management solutions popular in regulated industries, especially the Life Sciences industry.
+Martin is a technology executive with extensive experience in the software industry that includes building and driving high-performance product development organizations. He is currently Vice President of Engineering at [Pinnacle 21][pinnacle21], which enables Life Sciences organizations to measure and improve the quality of their submission data.
+
+Prior to that, he spent much of his career as CTO of [Wingspan Technology][wingspan], a software firm focused on document management solutions, where he was hired to build the software engineering practice and led the technical team for 15 years before the company’s sale to [IQVIA][iqvia] in 2017. At Wingspan he served as program executive and architect for multiple SaaS products and document management solutions popular in regulated industries, especially the Life Sciences industry.
 
 Prior to joining Wingspan he founded [Ethermoon Entertainment][ethermoon] and served as CTO of Apricus, a clinical data visualization company).
 
@@ -11,6 +13,7 @@ He is also an active member of the technology community as an organizer and freq
 
 Martin graduated from Cornell University with a BS in Computer Science.
 
+[pinnacle21]: https://www.pinnacle21.com/
 [wingspan]: https://www.wingspan.com
 [iqvia]: https://www.iqvia.com/
 [ethermoon]: https://ethermoon.com
