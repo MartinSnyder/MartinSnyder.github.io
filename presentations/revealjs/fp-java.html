@@ -36,8 +36,33 @@
           <p>
             <small>
               <a href="https://martinsnyder.net">Martin Snyder</a> /
-              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a>
+              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a> /
+              <a href="https://pinnacle21.com">Pinnacle 21</a>
             </small>
+          </p>
+        </section>
+
+        <section>
+          <h1>Following Along</h1>
+          <p>
+            Links
+            <ul>
+              <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
+              <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h1>Thank You!</h1>
+          <p>
+            If you or your organization has a need, please look within our
+            community first before broadening your search!
+            <br />
+            <a href="https://www.meetup.com/PhillyJUG/"><img src="fp-java/jug.jpg" height="10%" width="10%" /></a>
+            <a href="https://www.cerner.com/"><img src="fp-java/cerner.jpg" height="10%" width="15%" /></a>
+            <br />
+            <a href="https://pinnacle21.com"><img src="fp-java/p21.png" height="10%" width="20%" /></a>
           </p>
         </section>
 
@@ -124,7 +149,7 @@
               <li>final keyword</li>
               <li>Strings</li>
               <li>Numerics</li>
-              <li>Guava Collection</li>
+              <li>Guava Collections</li>
               <li>Java 8 - Streams</li>
               <li>Java 9 - Collection factory methods</li>
             </ul>
@@ -165,6 +190,19 @@
               The magic number is 24</code></pre>
           </section>
 
+          <section>
+            <section>
+              <h3>Deep Dive - Stream Transformations</h3>
+              <ul>
+                <li>filter - conditionally remove</li>
+                <li>map - transform</li>
+                <li>flatmap - transform, but expand</li>
+                <li>limit - truncate large or infinite stream</li>
+                <li>reduce - combine and/or condense</li>
+              </ul>
+            </section>
+          </section>
+        
           <section>
             <h3>Java Immutable Collections</h3>
             Source
@@ -304,6 +342,32 @@
                 }
               }</code></pre>
           </section>
+
+          <section>
+            <h3>Aside - Tail Recursion</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              static &lt;T&gt; int lengthTailRecursive(List&lt;T&gt; l) {
+                return lengthTailR(l, 0);
+              }
+          
+              private static &lt;T&gt; int lengthTailR(List&lt;T&gt; l, int acc) {
+                if (l.isEmpty()) {
+                  return acc;
+                }
+                else {
+                  return lengthTailR(l.tail(), acc + 1);
+                }
+              }</code></pre>
+          </section>
+  
+          <section>
+            <h3>Tail Recursion Optimization</h3>
+            <ul>
+              <li>Iterative and Tail Recursive algorithms can be compiled to the same output</li>
+              <li>... but not in Java</li>
+            </ul>
+          </section>
+  
         </section>
 
         <section>
@@ -371,6 +435,7 @@
 
               System.out.println("List is " + listToString(numbers));
               System.out.println("lengthRecursive is " + lengthRecursive(numbers));
+              System.out.println("lengthTailRecursive is " + lengthTailRecursive(numbers));
               System.out.println("Length is " + length(numbers));
               System.out.println("Sum is " + sum(numbers));</code></pre>
 
@@ -378,6 +443,7 @@
             <pre><code data-trim data-noescape data-line-numbers>
               List is 8675309
               lengthRecursive is 7
+              lengthTailRecursive is 7
               Length is 7
               Sum is 38</code></pre>
           </section>
@@ -457,6 +523,13 @@
             <a href="https://en.wikipedia.org/wiki/Referential_transparency"
               >wikipedia.org</a
             >
+          </section>
+
+          <section>
+            <h3>Referential Transparency Simplified</h3>
+            Variable Assignment \[\begin{aligned} y &amp; = f(x) \\ z &amp; = y
+            + y \end{aligned} \] Substitution Method \[\begin{aligned} z &amp; =
+            f(x) + f(x) \end{aligned} \]
           </section>
 
           <section>
@@ -564,6 +637,7 @@
             <ul>
               <li>Rigor over policy</li>
               <li>Control scope / possibilities</li>
+              <li>Prevent impossible states</li>
             </ul>
           </section>
 
@@ -740,7 +814,8 @@
           <p>
             <small>
               <a href="https://martinsnyder.net">Martin Snyder</a> /
-              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a>
+              <a href="https://twitter.com/MartinSnyder">@MartinSnyder</a> /
+              <a href="https://pinnacle21.com">Pinnacle 21</a>
             </small>
           </p>
         </section>
