@@ -43,9 +43,8 @@
         </section>
 
         <section>
-          <h1>Following Along</h1>
+          <h1>Links</h1>
           <p>
-            Links
             <ul>
               <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
               <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
@@ -180,6 +179,7 @@
                 .stream(intArray)
                 .map(i -&gt; i * 2)
                 .filter(i -&gt; i &gt; 5)
+                .flatMap(i -&gt; Stream.of(i, i))
                 .reduce((acc, i) -&gt; acc + i)
                 .get();
 
@@ -187,12 +187,12 @@
 
             Output
             <pre><code data-trim data-noescape data-line-numbers>
-              The magic number is 24</code></pre>
+              The magic number is 48</code></pre>
           </section>
 
           <section>
             <section>
-              <h3>Deep Dive - Stream Transformations</h3>
+              <h3>Stream Transformation Methods</h3>
               <ul>
                 <li>filter - conditionally remove</li>
                 <li>map - transform</li>
@@ -363,11 +363,10 @@
           <section>
             <h3>Tail Recursion Optimization</h3>
             <ul>
-              <li>Iterative and Tail Recursive algorithms can be compiled to the same output</li>
+              <li>Iterative and tail recursive algorithms can be compiled to the same output</li>
               <li>... but not in Java</li>
             </ul>
           </section>
-  
         </section>
 
         <section>
@@ -394,25 +393,25 @@
           </section>
 
           <section>
-            <h3>Generalized Recursion (Fold)</h3>
+            <h3>Generalized Recursion (FoldLeft)</h3>
             <pre><code data-trim data-noescape data-line-numbers>
               interface Combiner&lt;R, T&gt; {
                 R combine(R r, T t);
               }
           
-              static &lt;R, T&gt; R fold(R acc, List&lt;T&gt; l, Combiner&lt;R, T&gt; combiner) {
+              static &lt;R, T&gt; R foldLeft(R acc, List&lt;T&gt; l, Combiner&lt;R, T&gt; combiner) {
                 if (l.isEmpty()) {
                   return acc;
                 }
                 else {
                   R nextAcc = combiner.combine(acc, l.head());
-                  return fold(nextAcc, l.tail(), combiner);
+                  return foldLeft(nextAcc, l.tail(), combiner);
                 }
               }</code></pre>
           </section>
 
           <section>
-            <h3>Using Fold</h3>
+            <h3>FoldLeft Application</h3>
             <pre><code data-trim data-noescape data-line-numbers>
               static &lt;T&gt; int length(List&lt;T&gt; l) {
                 return fold(0, l, (acc, next) -&gt; acc + 1);
@@ -428,12 +427,37 @@
           </section>
 
           <section>
+            <h3>Alternative Fold (FoldRight)</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              static &lt;R, T&gt; R foldRight(R acc, List&lt;T&gt; l, Combiner&lt;R, T&gt; combiner) {
+                if (l.isEmpty()) {
+                  return acc;
+                }
+                else {
+                  R interior = foldRight(acc, l.tail(), combiner);
+                  return combiner.combine(interior, l.head());
+                }
+            }</code></pre>
+          </section>
+
+          <section>
+            <h3>FoldRight Application</h3>
+            <pre><code data-trim data-noescape data-line-numbers>
+              static &lt;R, T&gt; List&lt;R&gt; map(List&lt;T&gt; l, Transformer&lt;R, T&gt; transformer) {
+                return foldRight((List&lt;R&gt;)new Empty&lt;R&gt;(), l, (soFar, el) -&gt;
+                  new Node&lt;&gt;(transformer.transform(el), soFar)
+                );
+            }</code></pre>
+          </section>
+
+          <section>
             <h3>Example</h3>
             Source
             <pre><code data-trim data-noescape data-line-numbers>
               List&lt;Integer&gt; numbers = new Node&lt;&gt;(8, new Node&lt;&gt;(6, new Node&lt;&gt;(7, new Node&lt;&gt;(5, new Node&lt;&gt;(3, new Node&lt;&gt;(0, new Node&lt;&gt;(9, new Empty&lt;&gt;())))))));
 
-              System.out.println("List is " + listToString(numbers));
+              System.out.println("List is        " + listToString(numbers));
+              System.out.println("Offset List is " + listToString(map(numbers, i -&gt; i &gt; 0 ? i -1: i)));
               System.out.println("lengthRecursive is " + lengthRecursive(numbers));
               System.out.println("lengthTailRecursive is " + lengthTailRecursive(numbers));
               System.out.println("Length is " + length(numbers));
@@ -441,7 +465,8 @@
 
             Output
             <pre><code data-trim data-noescape data-line-numbers>
-              List is 8675309
+              List is        8675309
+              Offset List is 7564208
               lengthRecursive is 7
               lengthTailRecursive is 7
               Length is 7
