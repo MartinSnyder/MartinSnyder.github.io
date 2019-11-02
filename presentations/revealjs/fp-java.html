@@ -43,16 +43,6 @@
         </section>
 
         <section>
-          <h1>Links</h1>
-          <p>
-            <ul>
-              <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
-              <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
-            </ul>
-          </p>
-        </section>
-
-        <section>
           <h1>Thank You!</h1>
           <p>
             If you or your organization has a need, please look within our
@@ -62,6 +52,16 @@
             <a href="https://www.cerner.com/"><img src="fp-java/cerner.jpg" height="10%" width="15%" /></a>
             <br />
             <a href="https://pinnacle21.com"><img src="fp-java/p21.png" height="10%" width="20%" /></a>
+          </p>
+        </section>
+
+        <section>
+          <h1>Links</h1>
+          <p>
+            <ul>
+              <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
+              <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
+            </ul>
           </p>
         </section>
 
@@ -413,7 +413,7 @@
           <section>
             <h3>FoldLeft Application</h3>
             <pre><code data-trim data-noescape data-line-numbers>
-              static &lt;T&gt; int length(List&lt;T&gt; l) {
+              static &lt;T&gt; int lengthWithFold(List&lt;T&gt; l) {
                 return fold(0, l, (acc, next) -&gt; acc + 1);
               }
 
@@ -460,16 +460,16 @@
               System.out.println("Offset List is " + listToString(map(numbers, i -&gt; i &gt; 0 ? i -1: i)));
               System.out.println("lengthRecursive is " + lengthRecursive(numbers));
               System.out.println("lengthTailRecursive is " + lengthTailRecursive(numbers));
-              System.out.println("Length is " + length(numbers));
+              System.out.println("lengthWithFold is " + lengthWithFold(numbers));
               System.out.println("Sum is " + sum(numbers));</code></pre>
 
             Output
             <pre><code data-trim data-noescape data-line-numbers>
               List is        8675309
               Offset List is 7564208
-              lengthRecursive is 7
+              lengthRecursive is     7
               lengthTailRecursive is 7
-              Length is 7
+              lengthWithFold is      7
               Sum is 38</code></pre>
           </section>
         </section>
@@ -606,6 +606,19 @@
             -
             <a href="https://en.wikipedia.org/wiki/Lazy_evaluation"
               >wikipedia.org</a
+            >
+          </section>
+
+          <section>
+            <h3>Laziness Example - Class Loading</h3>
+            <blockquote cite="https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-5.html">
+              For example, a Java Virtual Machine implementation may choose a "lazy" linkage
+              strategy, where each symbolic reference in a class or interface (other than the
+              symbolic references above) is resolved individually when it is used.
+            </blockquote>
+            -
+            <a href="https://docs.oracle.com/javase/specs/jvms/se13/html/jvms-5.html"
+              >JVM Specification</a
             >
           </section>
 
