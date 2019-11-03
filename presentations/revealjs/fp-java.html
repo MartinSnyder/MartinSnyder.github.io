@@ -733,7 +733,7 @@
           </section>
 
           <section>
-            <h3>Abstract Data Type Examples</h3>
+            <h3>Algebraic Data Type Examples</h3>
             Current
             <pre><code data-trim data-noescape data-line-numbers>
               interface EmploymentDates{}
@@ -742,8 +742,8 @@
                 Date startDate; }
 
               class TerminatedEmployee implements EmploymentDates {
-                  Date startDate;
-                  Date endDate; }</code></pre>
+                Date startDate;
+                Date endDate; }</code></pre>
 
             Future (Candidate -
             <a href="https://openjdk.java.net/jeps/8222777">JEP 359</a>,
@@ -755,6 +755,60 @@
                   implements EmploymentDates {}
                 record TerminatedEmployee(Date startDate, Date endDate)
                   implements EmploymentDates {}</code></pre>
+          </section>
+
+          <section>
+            <h3>Mandatory Inclusion of Optional</h3>
+            <ul>
+              <li>Optional is <i>conceptually</i> an ADT</li>
+              <li>Use it to avoid:
+                <ul>
+                  <li>Sentinel Values</li>
+                  <li>Unnecessary Exceptions</li>
+                  <li>null</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Producing Optional</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              static Optional&lt;Double&gt; divide(double numerator
+                                            ,double denominator) {
+                return denominator == 0
+                  ? Optional.empty()
+                  : Optional.of(numerator / denominator);
+              }
+            
+              System.out.println("1 / 0 = " + divide(1, 0));
+              System.out.println("1 / 3 = " + divide(1, 3));</code></pre>
+
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              1 / 0 = Optional.empty
+              1 / 3 = Optional[0.3333333333333333]</code></pre>
+          </section>
+
+          <section>
+            <h3>Consuming Optional</h3>
+            <ul>
+              <li>
+                Avoid
+                <ul>
+                  <li>get</li>
+                  <li>isPresent / isEmpty</li>
+                </ul>
+              </li>
+              <li>
+                Embrace
+                <ul>
+                  <li>filter / map / flatMap</li>
+                  <li>Things like "oeElse"</li>
+                </ul>
+              </li>
+            </ul>
           </section>
         </section>
 
