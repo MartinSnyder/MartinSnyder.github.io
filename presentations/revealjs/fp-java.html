@@ -56,16 +56,6 @@
         </section>
 
         <section>
-          <h1>Links</h1>
-          <p>
-            <ul>
-              <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
-              <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
-            </ul>
-          </p>
-        </section>
-
-        <section>
           <section>
             <h3>Example Functions</h3>
             \[\begin{aligned} x &amp; = f(g) \\ y &amp; = f(h) \\ z &amp; = g(y)
@@ -674,19 +664,23 @@
             <h3>Themes</h3>
             <ul>
               <li>Rigor over policy</li>
-              <li>Control scope / possibilities</li>
-              <li>Prevent impossible states</li>
+              <li>Limit possibilities</li>
+              <li>Prevent the unexpected</li>
             </ul>
           </section>
 
           <section>
             <h3>Implications regarding data types</h3>
             <ul>
-              <li>
-                Algebraic Data Types
+              <li>Mathematical Rigor for Types
                 <ul>
                   <li>
-                    Pattern Matching
+                    Algebraic Data Types
+                    <ul>
+                      <li>
+                        Pattern Matching
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
@@ -755,60 +749,6 @@
                   implements EmploymentDates {}
                 record TerminatedEmployee(Date startDate, Date endDate)
                   implements EmploymentDates {}</code></pre>
-          </section>
-
-          <section>
-            <h3>Mandatory Inclusion of Optional</h3>
-            <ul>
-              <li>Optional is <i>conceptually</i> an ADT</li>
-              <li>Use it to avoid:
-                <ul>
-                  <li>Sentinel Values</li>
-                  <li>Unnecessary Exceptions</li>
-                  <li>null</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Producing Optional</h3>
-            Source
-            <pre><code data-trim data-noescape data-line-numbers>
-              static Optional&lt;Double&gt; divide(double numerator
-                                            ,double denominator) {
-                return denominator == 0
-                  ? Optional.empty()
-                  : Optional.of(numerator / denominator);
-              }
-            
-              System.out.println("1 / 0 = " + divide(1, 0));
-              System.out.println("1 / 3 = " + divide(1, 3));</code></pre>
-
-            Output
-            <pre><code data-trim data-noescape data-line-numbers>
-              1 / 0 = Optional.empty
-              1 / 3 = Optional[0.3333333333333333]</code></pre>
-          </section>
-
-          <section>
-            <h3>Consuming Optional</h3>
-            <ul>
-              <li>
-                Avoid
-                <ul>
-                  <li>get</li>
-                  <li>isPresent / isEmpty</li>
-                </ul>
-              </li>
-              <li>
-                Embrace
-                <ul>
-                  <li>filter / map / flatMap</li>
-                  <li>Things like "oeElse"</li>
-                </ul>
-              </li>
-            </ul>
           </section>
         </section>
 
@@ -892,15 +832,167 @@
           </section>
         </section>
 
-        <!--
-            https://www.youtube.com/watch?v=BL6ba2dtprw
-            Java Futures, Early 2019 Edition - Brian Goetz
+        <section>
+          <section>
+            <h3>Some Words about Optional</h3>
+            <ul>
+              <li>Optional is <i>conceptually</i> (but not actually) an ADT</li>
+              <li>Use it to avoid:
+                <ul>
+                  <li>Sentinel Values</li>
+                  <li>Unnecessary Exceptions</li>
+                  <li>null</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
 
-          More Tweets
-            https://twitter.com/mathiasverraes/status/1153615691397943297?s=03
-            https://twitter.com/alexelcu/status/1161930030412423168?s=03
-        -->
+          <section>
+            <h3>Producing Optional</h3>
+            Source
+            <pre><code data-trim data-noescape data-line-numbers>
+              static Optional&lt;Double&gt; divide(double numerator
+                                            ,double denominator) {
+                return denominator == 0
+                  ? Optional.empty()
+                  : Optional.of(numerator / denominator);
+              }
+            
+              System.out.println("1 / 0 = " + divide(1, 0));
+              System.out.println("1 / 3 = " + divide(1, 3));</code></pre>
 
+            Output
+            <pre><code data-trim data-noescape data-line-numbers>
+              1 / 0 = Optional.empty
+              1 / 3 = Optional[0.3333333333333333]</code></pre>
+          </section>
+
+          <section>
+            <h3>Consuming Optional 1/3</h3>
+            Replace
+            <pre><code data-trim data-noescape data-line-numbers>
+              static int safeGet(Optional&lt;Integer&gt; optional, int defaultValue) {
+                if (optional.isPresent()) {
+                  return optional.get();
+                }
+                else {
+                  return defaultValue;
+                }
+              }</code></pre>
+
+            With
+            <pre><code data-trim data-noescape data-line-numbers>
+              optional.orElse(defaultValue);</code></pre>
+          </section>
+
+          <section>
+            <h3>Consuming Optional 2/3</h3>
+            Replace
+            <pre><code data-trim data-noescape data-line-numbers>
+              static Optional&lt;String&gt; safeToString(Optional&lt;Integer&gt; optional) {
+                if (optional.isPresent()) {
+                  return Optional.of(optional.get().toString());
+                }
+                else {
+                  return Optional.empty();
+                }
+              }</code></pre>
+
+            With
+            <pre><code data-trim data-noescape data-line-numbers>
+              optional.map(Object::toString);</code></pre>
+          </section>
+
+          <section>
+            <h3>Consuming Optional 3/3</h3>
+            Replace
+            <pre><code data-trim data-noescape data-line-numbers>
+              static Optional&lt;Double&gt; safeDivide(Optional&lt;Integer&gt; numerator, int by) {
+                if (numerator.isPresent()) {
+                  return divide(numerator.get(), by);
+                }
+                else {
+                  return Optional.empty();
+                }
+              }</code></pre>
+
+            With
+            <pre><code data-trim data-noescape data-line-numbers>
+              numerator.flatMap(i -&gt; divide(i, denominator));</code></pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Other Opinions 1/3</h3>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                I wish we&#39;d stop debating OOP vs FP, and started debating individual paradigms.
+                Immutability, encapsulation, global state, single assignment, actor model, pure
+                functions, IO in the type system, inheritance, composition... all of these are
+                perfectly possible in either OOP or FP.
+              </p>
+              &mdash; Mathias Verraes (@mathiasverraes)
+              <a href="https://twitter.com/mathiasverraes/status/1153615691397943297?ref_src=twsrc%5Etfw">July 23, 2019</a>
+            </blockquote>
+          </section>
+
+          <section>
+            <h3>Other Opinions 2/3</h3>
+            <blockquote class="twitter-tweet">
+              <p lang="en" dir="ltr">
+                Onboarding people new to <a href="https://twitter.com/hashtag/Scala?src=hash&amp;ref_src=twsrc%5Etfw">#Scala</a>
+                can be challenging but most difficult parts are not about syntax, but about the paradigm
+                shift:<br><br>1. Immutability<br>2. Higher-order functions<br>3. Pervasive map/flatMap
+                (Monads)<br>4. Suspending effects (Task/IO)<br>5. Referential transparency<br>6. Type
+                classes
+              </p
+              >&mdash; Alex Nedelcu (@alexelcu) <a href="https://twitter.com/alexelcu/status/1161930030412423168?ref_src=twsrc%5Etfw">August 15, 2019</a>
+            </blockquote>
+          </section>
+
+          <section>
+            <h3>Other Opinions 3/3</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BL6ba2dtprw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br />
+
+            Java Futures, Early 2019 Edition<br>
+            - <a href="https://twitter.com/BrianGoetz">Brian Goetz</a> at <a href="https://2019.phillyemergingtech.com/">Philly ETE 2019</a>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Simple Recommendations</h3>
+            <ul>
+              <li>Use final more, especially on raw data objects</li>
+              <li>Favor Java-provided immutable collections</li>
+              <li>Eliminate sentinel values</li>
+              <li>Limit use of ADTs without pattern matching</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Less Simple Recommendations</h3>
+            <ul>
+              <li>Don't be in a hurry to unpack an Optional</li>
+              <li>Create more containers like Optional</li>
+              <li>Experiment with techniques on <a href="https://projecteuler.net/">Project Euler</a></li>
+              <li>Accelerate learning in an FP lang like <a href="https://elm-lang.org/">Elm</a> or <a href="https://www.scala-lang.org/">Scala</a></li>
+              <li>Read a book AND do the exercises</li>
+            </ul>
+          </section>  
+        </section>
+
+        <section>
+          <h1>Links</h1>
+          <p>
+            <ul>
+              <li><a href="https://martinsnyder.net/presentations.html">https://martinsnyder.net/presentations.html</a></li>
+              <li><a href="https://github.com/MartinSnyder/fp-java">https://github.com/MartinSnyder/fp-java</a></li>
+            </ul>
+          </p>
+        </section>
+        
         <section>
           <h1>Thank You!</h1>
           <p>
