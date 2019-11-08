@@ -56,9 +56,18 @@
         </section>
 
         <section>
+          <h1>The Plan</h1>
+          <ul>
+            <li>Explain the rationale for functional programming</li>
+            <li>Highlight related Java language features</li>
+            <li>Inspire further learning</li>
+          </ul>
+        </section>
+  
+        <section>
           <section>
             <h3>Example Functions</h3>
-            \[\begin{aligned} x &amp; = f(g) \\ y &amp; = f(h) \\ z &amp; = g(y)
+            \[\begin{aligned} y &amp; = f(x) \\ z &amp; = g(y) \\ z &amp; = g(f(x))
             \\ \omega &amp; = sin(\theta) \\ state' &amp; = f(state, input)
             \end{aligned} \]
           </section>
@@ -127,8 +136,8 @@
               <li>No unexpected manipulations</li>
               <li>Sharing instead of copying</li>
               <li>Trivial caching</li>
-              <li>Multi-threaded Accessible</li>
-              <li>Reusable object instances</li>
+              <li>No synchronization issues</li>
+              <li>Copies are interchangeable</li>
             </ul>
           </section>
 
