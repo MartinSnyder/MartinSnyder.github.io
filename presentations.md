@@ -14,7 +14,7 @@ title: Presentations
 | Converting a JSR-168 Portlet to an SAP iView                        | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
 | Developing Web Services for Documentum                              | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing] | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
-| [Functional Programming in Java][abstract-fp-java]                  | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              |                                                     |
+| [Functional Programming in Java][abstract-fp-java]                  | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              | [![Video][icon-video]][video-java-fp]               |
 | Functional Programming in JavaScript Workshop                       | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
 | Functional Wrappers for legacy APIs                                 | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
 | Immutability in JavaScript and seamless-immutable-cursor            | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
@@ -61,6 +61,7 @@ title: Presentations
 [video-chatserver]: https://www.youtube.com/watch?v=rB5RM-dc4Sg
 [video-phase-chat]: https://www.youtube.com/watch?v=py_V_7gD5WU
 [video-cto-chat]: https://www.youtube.com/watch?v=Fe02gMi_PoU
+[video-java-fp]: https://www.youtube.com/watch?v=4H-tqpJG3qo
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
