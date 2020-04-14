@@ -7,7 +7,7 @@ title: Presentations
 | ------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- |
 | [Agile Methodologies in Hostile Environments][abstract-hostile]     | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-hostile]               |                                                 | [![Video][icon-video]][video-hostile]               |
 | AJAX: What it is and What it Can Do for Your iViews                 | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
-| All Kinds of Free                                                   |                                        |                                                        |                                                 |                                                     |
+| [All Kinds of Free][abstract-free]                                  | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-free]                  |                                                 |                                                     |
 | Building a Custom Query Engine with Quill                           | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
 | [Building Data Breach Resistant Systems][abstract-data-breach]      | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
 | Code Talk: Chat with a CTO                                          | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
@@ -35,6 +35,7 @@ title: Presentations
 [abstract-embracing]: https://tmfrefmodel.com/2018/12/12/free-webinar-wingspan/
 [abstract-chatserver]: https://nescala.io/talks.html#http4s-chat-server
 [abstract-fp-java]: https://www.meetup.com/PhillyJUG/events/263167279/
+[abstract-free]: https://2020.phillyemergingtech.com/talks/all-kinds-of-free/
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
 [org-phillyete]: http://phillyemergingtech.com/
@@ -87,6 +88,7 @@ title: Presentations
 [slides-jsr168-iviews]: {% link presentations/jsr168_iviews.pdf %}
 [slides-tweets]: {% link presentations/revealjs/favorite-tweets.html %}
 [slides-fp-java]: {% link presentations/revealjs/fp-java.html %}
+[slides-free]: {% link presentations/all_kinds_of_free.pdf %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
