@@ -144,11 +144,17 @@ Many people, especially the people in the third category, comment on how they ca
 >
 > - Randy Pausch
 
-“Experience” in this case isn’t solely relate to professional experience, but rather all experience. The person being told this has neither skills nor promise in the opinion of the employer. They are not an _educated person_. They have not learned how to do anything of value to that employer and, presumably, there are no available positions where these shortcomings can be overlooked. This is one of the most important concepts to impart on the younger generation. The fact that being rejected for lack of experience is a _euphemism_ and not to be taken literally. You are in the third group. You have been eaten by the bear.
-
 > _"Good judgment comes from experience, and a lot of that comes from bad judgment."_[^10]
 >
 > - Will Rodgers or Jim Horning or Mulla Nasreddin or …
+
+> "Experience is something you don't get until just after you need it."
+>
+> - Steven Wright
+
+There are many pithy quotes regarding experience, but they all have the same common theme. One must _do_ something in order to gain experience. It does not always matter what it is that they do.
+
+“Experience” in this case isn’t solely related to professional experience, but rather all experience. The person being told this has neither skills nor promise in the opinion of the employer. They are not an _educated person_. They have not learned how to do anything of value to that employer and, presumably, there are no available positions where these shortcomings can be overlooked. This is one of the most important concepts to impart on the younger generation. The fact that being rejected for lack of experience is a _euphemism_ and not to be taken literally. You are in the third group. You have been eaten by the bear.
 
 ## How To Run From the Bear
 
