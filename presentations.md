@@ -7,7 +7,7 @@ title: Presentations
 | ------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- |
 | [Agile Methodologies in Hostile Environments][abstract-hostile]     | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-hostile]               |                                                 | [![Video][icon-video]][video-hostile]               |
 | AJAX: What it is and What it Can Do for Your iViews                 | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
-| [All Kinds of Free][abstract-free]                                  | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-free]                  |                                                 |                                                     |
+| [All Kinds of Free][abstract-free]                                  | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-free]                  |                                                 | [![Video][icon-video]][video-free]                  |
 | Building a Custom Query Engine with Quill                           | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
 | [Building Data Breach Resistant Systems][abstract-data-breach]      | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
 | Code Talk: Chat with a CTO                                          | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
@@ -63,6 +63,7 @@ title: Presentations
 [video-phase-chat]: https://www.youtube.com/watch?v=py_V_7gD5WU
 [video-cto-chat]: https://www.youtube.com/watch?v=Fe02gMi_PoU
 [video-java-fp]: https://www.youtube.com/watch?v=4H-tqpJG3qo
+[video-free]: https://www.youtube.com/watch?v=DiYCj8-YC9w&list=PL9oQ7yETvN10e5SdIi4hgLEEO7XgJf2fC&index=23&t=0s
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
