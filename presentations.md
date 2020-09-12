@@ -3,31 +3,32 @@ layout: page
 title: Presentations
 ---
 
-| Title                                                               | Organization                           | Slides                                                 | Code                                            | Media                                               |
-| ------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- |
-| [Agile Methodologies in Hostile Environments][abstract-hostile]     | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-hostile]               |                                                 | [![Video][icon-video]][video-hostile]               |
-| AJAX: What it is and What it Can Do for Your iViews                 | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
-| [All Kinds of Free][abstract-free]                                  | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-free]                  |                                                 | [![Video][icon-video]][video-free]                  |
-| Building a Custom Query Engine with Quill                           | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
-| [Building Data Breach Resistant Systems][abstract-data-breach]      | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
-| Code Talk: Chat with a CTO                                          | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
-| Converting a JSR-168 Portlet to an SAP iView                        | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
-| Developing Web Services for Documentum                              | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
-| [Embracing the TMF Exchange Mechanism Standard][abstract-embracing] | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
-| [Functional Programming in Java][abstract-fp-java]                  | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              | [![Video][icon-video]][video-java-fp]               |
-| Functional Programming in JavaScript Workshop                       | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
-| Functional Wrappers for legacy APIs                                 | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
-| Immutability in JavaScript and seamless-immutable-cursor            | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
-| [JWTs and Their Application][abstract-jwt]                          | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
-| Live Coding a Chat Server with WebSockets and http4s                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
-| Live coding a CRUD database in Scala                                | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
-| Monadic Logging and You!                                            | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
-| My Favorite Tweets                                                  |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
-| Transforming Clinical Processes Using Box                           | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
-| Stop goofing around during build cycles with webpack HMR            | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
-| [Tech People Podcast Interview][podcast-tech-people]                | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
-| [TechCast #96 – Philly ETE Happy Hour Chat][podcast-techcast]       | [TechCast][org-techcast]               |                                                        |                                                 | [![Audio][icon-audio]][audio-techcast-interview]    |
-| [Websockets in http4s][abstract-chatserver]                         | [NEScala][org-nescala]                 |                                                        | [![Code][icon-code]][repo-chatserver]           | [![Video][icon-video]][video-chatserver]            |
+| Title                                                                  | Organization                           | Slides                                                 | Code                                            | Media                                               |
+| ---------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------- |
+| [Agile Methodologies in Hostile Environments][abstract-hostile]        | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-hostile]               |                                                 | [![Video][icon-video]][video-hostile]               |
+| AJAX: What it is and What it Can Do for Your iViews                    | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-ajax-iviews]           |                                                 |                                                     |
+| [All Kinds of Free][abstract-free]                                     | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-free]                  |                                                 | [![Video][icon-video]][video-free]                  |
+| Building a Custom Query Engine with Quill                              | Scala by the Schuylkill                | [![Slides][icon-slides]][slides-quill]                 | [![Code][icon-code]][repo-functional-datastore] | [![Video][icon-video]][video-quill]                 |
+| [Building Data Breach Resistant Systems][abstract-data-breach]         | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
+| Code Talk: Chat with a CTO                                             | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
+| Converting a JSR-168 Portlet to an SAP iView                           | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
+| Developing Web Services for Documentum                                 | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
+| [Embracing the TMF Exchange Mechanism Standard][abstract-embracing]    | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
+| [Functional Programming in Java][abstract-fp-java]                     | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              | [![Video][icon-video]][video-java-fp]               |
+| Functional Programming in JavaScript Workshop                          | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
+| Functional Wrappers for legacy APIs                                    | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
+| Immutability in JavaScript and seamless-immutable-cursor               | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
+| [JWTs and Their Application][abstract-jwt]                             | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
+| Live Coding a Chat Server with WebSockets and http4s                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
+| Live coding a CRUD database in Scala                                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
+| Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
+| My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
+| Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
+| Stop goofing around during build cycles with webpack HMR               | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
+| [Tech People Podcast Interview][podcast-tech-people]                   | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
+| [TechCast #96 – Philly ETE Happy Hour Chat][podcast-techcast]          | [TechCast][org-techcast]               |                                                        |                                                 | [![Audio][icon-audio]][audio-techcast-interview]    |
+| [TechChat Tuesday's #10 - The "Free" in Software][podcast-techchat-10] | [TechChat][org-techchat]               |                                                        |                                                 | [![Video][icon-video]][video-techchat]              |
+| [Websockets in http4s][abstract-chatserver]                            | [NEScala][org-nescala]                 |                                                        | [![Code][icon-code]][repo-chatserver]           | [![Video][icon-video]][video-chatserver]            |
 
 [abstract-jwt]: https://www.meetup.com/PhillyJUG/events/236825899/
 [abstract-data-breach]: https://2017.phillyemergingtech.com/session/building-data-breach-and-subpoena-resistant-applications/
@@ -38,6 +39,7 @@ title: Presentations
 [abstract-free]: https://2020.phillyemergingtech.com/talks/all-kinds-of-free/
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
+[podcast-techchat-10]: https://chariotsolutions.com/podcast/techchat-tuesdays-10-martin-snyder/
 [org-phillyete]: http://phillyemergingtech.com/
 [org-boxworks]: https://www.box.com/boxworks
 [org-phillyjug]: https://www.meetup.com/PhillyJUG/
@@ -48,6 +50,7 @@ title: Presentations
 [org-asug]: https://www.asug.com/
 [org-techpeople]: http://www.gistia.com/techpeople/
 [org-techcast]: https://chariotsolutions.com/podcasts/show/techcast/
+[org-techchat]: https://chariotsolutions.com/podcasts/show/techchat-tuesdays/
 [org-tmf-ems]: https://tmfrefmodel.com/ems/
 [org-codetalk]: https://twitter.com/hashtag/codetalk
 [video-data-breach]: https://www.youtube.com/watch?v=WEK203FC1y8
@@ -64,6 +67,7 @@ title: Presentations
 [video-cto-chat]: https://www.youtube.com/watch?v=Fe02gMi_PoU
 [video-java-fp]: https://www.youtube.com/watch?v=4H-tqpJG3qo
 [video-free]: https://www.youtube.com/watch?v=DiYCj8-YC9w&list=PL9oQ7yETvN10e5SdIi4hgLEEO7XgJf2fC&index=23&t=0s
+[video-techchat]: https://youtu.be/7LVjigRF1D4
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
