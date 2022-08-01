@@ -24,7 +24,7 @@ title: Presentations
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
-| [Typed vs. Untyped (Panel)][abstract-panel-2022]                       | [Philly ETE][org-phillyete]            |                                                        |                                                 |                                                     |
+| [Typed vs. Untyped (Panel)][abstract-panel-2022]                       | [Philly ETE][org-phillyete]            |                                                        |                                                 | [![Video][icon-video]][video-panel-2022]            |
 | Stop goofing around during build cycles with webpack HMR               | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
 | [Tech People Podcast Interview][podcast-tech-people]                   | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
 | [TechCast #96 – Philly ETE Happy Hour Chat][podcast-techcast]          | [TechCast][org-techcast]               |                                                        |                                                 | [![Audio][icon-audio]][audio-techcast-interview]    |
@@ -70,6 +70,7 @@ title: Presentations
 [video-java-fp]: https://www.youtube.com/watch?v=4H-tqpJG3qo
 [video-free]: https://www.youtube.com/watch?v=DiYCj8-YC9w&list=PL9oQ7yETvN10e5SdIi4hgLEEO7XgJf2fC&index=23&t=0s
 [video-techchat]: https://youtu.be/7LVjigRF1D4
+[video-panel-2022]: https://www.youtube.com/watch?v=o5j4ZIt6KcU&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=21
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
