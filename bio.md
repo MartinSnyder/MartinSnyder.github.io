@@ -3,7 +3,7 @@ layout: page
 title: Bio
 ---
 
-Martin is a technology executive with extensive experience in the software industry that includes building and driving high-performance product development organizations. He is currently Vice President of Engineering at [Pinnacle 21][pinnacle21], which enables Life Sciences organizations to measure and improve the quality of their submission data.
+Martin is a technology executive with extensive experience in the software industry that includes building and driving high-performance product development organizations. He most recent position was as Vice President of Engineering at [Pinnacle 21][pinnacle21], which enables Life Sciences organizations to measure and improve the quality of their submission data. Pinnacle 21 was acquired by [Certara][certara] in 2022, where he now serves as VP of Engineering for the Cloud Data Science team.
 
 Prior to that, he spent much of his career as CTO of [Wingspan Technology][wingspan], a software firm focused on document management solutions, where he was hired to build the software engineering practice and led the technical team for 15 years before the company’s sale to [IQVIA][iqvia] in 2017. At Wingspan he served as program executive and architect for multiple SaaS products and document management solutions popular in regulated industries, especially the Life Sciences industry.
 
@@ -16,6 +16,7 @@ Martin graduated from Cornell University with a BS in Computer Science.
 [pinnacle21]: https://www.pinnacle21.com/
 [wingspan]: https://www.wingspan.com
 [iqvia]: https://www.iqvia.com/
+[certara]: http://certara.com
 [ethermoon]: https://ethermoon.com
 [phillyjug]: https://www.meetup.com/PhillyJUG/
 [phase]: https://www.meetup.com/scala-phase/
