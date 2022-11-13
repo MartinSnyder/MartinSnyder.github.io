@@ -21,6 +21,7 @@ title: Presentations
 | [JWTs and Their Application][abstract-jwt]                             | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
 | Live Coding a Chat Server with WebSockets and http4s                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
 | Live coding a CRUD database in Scala                                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
+| Management and Organizational Design                                   | Villanova University                   | [![Slides][icon-slides]][slides-manage-org]            |                                                 |                                                     |
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
@@ -97,6 +98,7 @@ title: Presentations
 [slides-tweets]: {% link presentations/revealjs/favorite-tweets.html %}
 [slides-fp-java]: {% link presentations/revealjs/fp-java.html %}
 [slides-free]: {% link presentations/all_kinds_of_free.pdf %}
+[slides-manage-org]: {% link presentations/revealjs/manage-org.html %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
