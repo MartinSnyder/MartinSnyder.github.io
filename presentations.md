@@ -21,7 +21,7 @@ title: Presentations
 | [JWTs and Their Application][abstract-jwt]                             | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
 | Live Coding a Chat Server with WebSockets and http4s                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
 | Live coding a CRUD database in Scala                                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
-| Management and Organizational Design                                   | Villanova University                   | [![Slides][icon-slides]][slides-manage-org]            |                                                 |                                                     |
+| Management and Organizational Design                                   | Villanova University                   | [![Slides][icon-slides]][slides-manage-org]            |                                                 | [![Video][icon-video]][video-manage-org]            |
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
@@ -72,6 +72,7 @@ title: Presentations
 [video-free]: https://www.youtube.com/watch?v=DiYCj8-YC9w&list=PL9oQ7yETvN10e5SdIi4hgLEEO7XgJf2fC&index=23&t=0s
 [video-techchat]: https://youtu.be/7LVjigRF1D4
 [video-panel-2022]: https://www.youtube.com/watch?v=o5j4ZIt6KcU&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=21
+[video-manage-org]: https://vums-web.villanova.edu/Mediasite/Play/7781b99613c64007b3e8f2e28d191fb71d
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
