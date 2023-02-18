@@ -12,6 +12,7 @@ title: Presentations
 | [Building Data Breach Resistant Systems][abstract-data-breach]         | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-data-breach]           |                                                 | [![Video][icon-video]][video-data-breach]           |
 | Code Talk: Chat with a CTO                                             | [Code Talk][org-codetalk]              |                                                        |                                                 | [![Video][icon-video]][video-cto-chat]              |
 | Converting a JSR-168 Portlet to an SAP iView                           | [Americas' SAP User's Group][org-asug] | [![Slides][icon-slides]][slides-jsr168-iviews]         |                                                 |                                                     |
+| Culture Builder Live                                                   | [Technical.ly][org-technically]        |                                                        |                                                 | [![Video][icon-video]][video-culture-builder]       |
 | Developing Web Services for Documentum                                 | Southeast Documentum User's Group      |                                                        |                                                 |                                                     |
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing]    | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
 | [Functional Programming in Java][abstract-fp-java]                     | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              | [![Video][icon-video]][video-java-fp]               |
@@ -56,6 +57,7 @@ title: Presentations
 [org-techchat]: https://chariotsolutions.com/podcasts/show/techchat-tuesdays/
 [org-tmf-ems]: https://tmfrefmodel.com/ems/
 [org-codetalk]: https://twitter.com/hashtag/codetalk
+[org-technically]: https://technical.ly/
 [video-data-breach]: https://www.youtube.com/watch?v=WEK203FC1y8
 [video-transforming-clinical]: https://cloud.app.box.com/s/5hefu7oisqwha3okqs35ukub7nvg3ald
 [video-quill]: https://www.youtube.com/watch?v=E5mtBTEgmLE
@@ -73,6 +75,7 @@ title: Presentations
 [video-techchat]: https://youtu.be/7LVjigRF1D4
 [video-panel-2022]: https://www.youtube.com/watch?v=o5j4ZIt6KcU&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=21
 [video-manage-org]: https://vums-web.villanova.edu/Mediasite/Play/7781b99613c64007b3e8f2e28d191fb71d
+[video-culture-builder]: https://www.linkedin.com/video/event/urn:li:ugcPost:7030951132977856512/
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
