@@ -22,7 +22,7 @@ title: Presentations
 | [JWTs and Their Application][abstract-jwt]                             | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
 | Live Coding a Chat Server with WebSockets and http4s                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
 | Live coding a CRUD database in Scala                                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-functional-datastore] |                                                     |
-| Management and Organizational Design                                   | Villanova University                   | [![Slides][icon-slides]][slides-manage-org]            |                                                 | [![Video][icon-video]][video-manage-org]            |
+| Management and Organizational Design                                   | [Villanova University][org-villanova]  | [![Slides][icon-slides]][slides-manage-org]            |                                                 | [![Video][icon-video]][video-manage-org]            |
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
@@ -57,6 +57,7 @@ title: Presentations
 [org-techchat]: https://chariotsolutions.com/podcasts/show/techchat-tuesdays/
 [org-tmf-ems]: https://tmfrefmodel.com/ems/
 [org-codetalk]: https://twitter.com/hashtag/codetalk
+[org-villanova]: https://villanova.edu
 [org-technically]: https://technical.ly/
 [video-data-breach]: https://www.youtube.com/watch?v=WEK203FC1y8
 [video-transforming-clinical]: https://cloud.app.box.com/s/5hefu7oisqwha3okqs35ukub7nvg3ald
