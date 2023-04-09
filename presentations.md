@@ -26,8 +26,9 @@ title: Presentations
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
-| [Typed vs. Untyped (Panel)][abstract-panel-2022]                       | [Philly ETE][org-phillyete]            |                                                        |                                                 | [![Video][icon-video]][video-panel-2022]            |
+| [Shaping up your Development Process][absract-shape-up]                | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-shape-up]              |                                                 |                                                     |
 | Stop goofing around during build cycles with webpack HMR               | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
+| [Typed vs. Untyped (Panel)][abstract-panel-2022]                       | [Philly ETE][org-phillyete]            |                                                        |                                                 | [![Video][icon-video]][video-panel-2022]            |
 | [Tech People Podcast Interview][podcast-tech-people]                   | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
 | [TechCast #96 – Philly ETE Happy Hour Chat][podcast-techcast]          | [TechCast][org-techcast]               |                                                        |                                                 | [![Audio][icon-audio]][audio-techcast-interview]    |
 | [TechChat Tuesday's #10 - The "Free" in Software][podcast-techchat-10] | [TechChat][org-techchat]               |                                                        |                                                 | [![Video][icon-video]][video-techchat]              |
@@ -41,6 +42,7 @@ title: Presentations
 [abstract-fp-java]: https://www.meetup.com/PhillyJUG/events/263167279/
 [abstract-free]: https://2020.phillyemergingtech.com/talks/all-kinds-of-free/
 [abstract-panel-2022]: https://2022.phillyemergingtech.com/speakers/martin-snyder/
+[absract-shape-up]: https://2023.phillyemergingtech.com/session/software-product-development-with-shape-up/
 [podcast-tech-people]: http://www.gistia.com/episode-12-martin-snyder/
 [podcast-techcast]: https://chariotsolutions.com/podcast/techcast-96-philly-ete-happy-hour-chat/
 [podcast-techchat-10]: https://chariotsolutions.com/podcast/techchat-tuesdays-10-martin-snyder/
@@ -104,6 +106,7 @@ title: Presentations
 [slides-fp-java]: {% link presentations/revealjs/fp-java.html %}
 [slides-free]: {% link presentations/all_kinds_of_free.pdf %}
 [slides-manage-org]: {% link presentations/revealjs/manage-org.html %}
+[slides-shape-up]: {% link presentations/revealjs/shape-up.html %}
 [icon-audio]: {% link asset/icon/audio.png %}
 [icon-code]: {% link asset/icon/github.png %}
 [icon-slides]: {% link asset/icon/slides.png %}
