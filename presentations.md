@@ -26,7 +26,7 @@ title: Presentations
 | Monadic Logging and You!                                               | [NEScala][org-nescala]                 | [![Slides][icon-slides]][slides-monadic-logging]       | [![Code][icon-code]][repo-monadic-logging]      | [![Video][icon-video]][video-monadic-logging]       |
 | My Favorite Tweets                                                     |                                        | [![Slides][icon-slides]][slides-tweets]                |                                                 |                                                     |
 | Transforming Clinical Processes Using Box                              | [BoxWorks][org-boxworks]               | [![Slides][icon-slides]][slides-transforming-clinical] |                                                 | [![Video][icon-video]][video-transforming-clinical] |
-| [Shaping up your Development Process][absract-shape-up]                | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-shape-up]              |                                                 |                                                     |
+| [Shaping up your Development Process][absract-shape-up]                | [Philly ETE][org-phillyete]            | [![Slides][icon-slides]][slides-shape-up]              |                                                 | [![Video][icon-video]][video-shape-up]              |
 | Stop goofing around during build cycles with webpack HMR               | [LibertyJS][org-libertyjs]             | [![Slides][icon-slides]][slides-webpack]               | [![Code][icon-code]][repo-webpack]              | [![Video][icon-video]][video-webpack]               |
 | [Typed vs. Untyped (Panel)][abstract-panel-2022]                       | [Philly ETE][org-phillyete]            |                                                        |                                                 | [![Video][icon-video]][video-panel-2022]            |
 | [Tech People Podcast Interview][podcast-tech-people]                   | [Tech People][org-techpeople]          |                                                        |                                                 | [![Audio][icon-audio]][audio-techpeople-interview]  |
@@ -79,6 +79,7 @@ title: Presentations
 [video-panel-2022]: https://www.youtube.com/watch?v=o5j4ZIt6KcU&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=21
 [video-manage-org]: https://vums-web.villanova.edu/Mediasite/Play/7781b99613c64007b3e8f2e28d191fb71d
 [video-culture-builder]: https://www.linkedin.com/video/event/urn:li:ugcPost:7030951132977856512/
+[video-shape-up]: https://www.youtube.com/watch?v=kh1n69gFbOY&list=PL9oQ7yETvN13V5Xp7016XupVLg3WqiMtx
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
 [audio-techcast-interview]: https://chariotsolutions.com/?powerpress_pinw=15743-podcast
 [repo-functional-datastore]: https://github.com/MartinSnyder/scala-transactional-datastore
