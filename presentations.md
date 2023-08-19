@@ -17,7 +17,7 @@ title: Presentations
 | [Embracing the TMF Exchange Mechanism Standard][abstract-embracing]    | [TMF Reference Model EMS][org-tmf-ems] |                                                        |                                                 | [![Video][icon-video]][video-tmf-ems-panel]         |
 | [Functional Programming in Java][abstract-fp-java]                     | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-fp-java]               | [![Code][icon-code]][repo-fp-java]              | [![Video][icon-video]][video-java-fp]               |
 | Functional Programming in JavaScript Workshop                          | [LibertyJS][org-libertyjs]             |                                                        | [![Code][icon-code]][repo-functional-js]        |                                                     |
-| Functional Wrappers for legacy APIs                                    | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][repo-functional-wrappers]    |
+| Functional Wrappers for legacy APIs                                    | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-functional-wrappers]   | [![Code][icon-code]][repo-functional-wrappers]  | [![Video][icon-video]][video-functional-wrappers]   |
 | Immutability in JavaScript and seamless-immutable-cursor               | [React Philly][org-react-philly]       | [![Slides][icon-slides]][slides-cursor]                | [![Code][icon-code]][repo-cursor]               | [![Video][icon-video]][video-cursor]                |
 | [JWTs and Their Application][abstract-jwt]                             | [Philly JUG][org-phillyjug]            | [![Slides][icon-slides]][slides-jwt]                   |                                                 |                                                     |
 | Live Coding a Chat Server with WebSockets and http4s                   | [PHASE][org-phase]                     |                                                        | [![Code][icon-code]][repo-phase-chat]           | [![Video][icon-video]][video-phase-chat]            |
@@ -77,7 +77,7 @@ title: Presentations
 [video-free]: https://www.youtube.com/watch?v=DiYCj8-YC9w&list=PL9oQ7yETvN10e5SdIi4hgLEEO7XgJf2fC&index=23&t=0s
 [video-techchat]: https://youtu.be/7LVjigRF1D4
 [video-panel-2022]: https://www.youtube.com/watch?v=o5j4ZIt6KcU&list=PL9oQ7yETvN11Ju0MTJ8yJ6dPYzNpW3_fn&index=21
-[video-manage-org]: https://vums-web.villanova.edu/Mediasite/Play/7781b99613c64007b3e8f2e28d191fb71d
+[video-manage-org]: https://www.youtube.com/watch?v=TubGz5GH_nM
 [video-culture-builder]: https://www.linkedin.com/video/event/urn:li:ugcPost:7030951132977856512/
 [video-shape-up]: https://www.youtube.com/watch?v=kh1n69gFbOY&list=PL9oQ7yETvN13V5Xp7016XupVLg3WqiMtx
 [audio-techpeople-interview]: https://soundcloud.com/method-matters/tp012-delivering-agile-methodologies-and-emerging-technologies-in-a-hostile-environment
