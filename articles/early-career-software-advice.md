@@ -18,4 +18,4 @@ It's not worth solving the problem of "getting screened out too much" if you are
 
 
 
-[college]: {% link dwytic.md %}
+[college]: {% link articles/dwytic.md %}
