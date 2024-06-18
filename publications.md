@@ -7,6 +7,7 @@ title: Publications
 | ---------------------------------------------------------------- | --------------------------- |
 | [Aggression and Risk][aggression-and-risk]                       | Self                        |
 | [Attention to Detail][attention-to-detail]                       | Self                        |
+| [Improving as a Software Developer][improving-in-software]       | Self                        |
 | [Developing JSR-168 Portlets][jsr168]                            | [Dr. Dobb's][pub-drdobbs]   |
 | [Functional Wrappers for legacy APIs][functional-wrappers]       | Self                        |
 | [Java 1.2 and JavaScript for C and C++ Programmers][javabook]    | [Wiley][pub-wiley]          |
@@ -31,6 +32,7 @@ title: Publications
 [functional-wrappers]: {% link articles/functional-wrappers.md %}
 [performance-enhancement]: {% link articles/performance-enhancement.md %}
 [attention-to-detail]: {% link articles/attention-to-detail.md %}
+[improving-in-software]: {% link articles/improving-software-skills.md %}
 [aggression-and-risk]: {% link articles/aggression-and-risk.md %}
 [ultima5]: {% link articles/ultima5.md %}
 [college]: {% link articles/dwytic.md %}
