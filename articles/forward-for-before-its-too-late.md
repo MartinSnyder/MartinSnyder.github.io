@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Forward for Energy Book
+title: Forward for Before It's Too Late
 ---
 
 My father was a scientist and researcher at heart. At the time of his death in early 2024, he had been working to finish this book, about climate change and energy policy. He had grown to believe (as many others have) that climate change was an existential threat to humanity and that our mechanisms for creating energy in its various forms are directly responsible.
