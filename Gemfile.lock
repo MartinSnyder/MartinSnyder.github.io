@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.1.5.2)
+    activesupport (7.1.6)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -35,8 +35,9 @@ GEM
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
-    ethon (0.17.0)
+    ethon (0.18.0)
       ffi (>= 1.15.0)
+      logger
     eventmachine (1.2.7)
     execjs (2.10.0)
     faraday (2.8.1)
@@ -227,7 +228,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.26.0)
+    minitest (5.26.1)
     mutex_m (0.3.0)
     nokogiri (1.15.7)
       mini_portile2 (~> 2.8.2)
