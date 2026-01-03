@@ -54,4 +54,3 @@ exclude:
   - README.md
   - .gitignore
   - .idea
-  - vendor
